@@ -1,0 +1,9 @@
+Reading:
+	Kilobot: A Low Cost Scalable Robot System for Collective Behaviors
+	The SWARM-BOTS Project 
+	Design and Working of Jasmine Swarm Robot
+	Reading up on all different types of electrical component
+Tasks:
+	Coding:
+		C code to simulate a simple PID controller
+	Making the list of requuired components (Electrical and Electronic component)
