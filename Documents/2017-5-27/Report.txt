@@ -3,6 +3,8 @@ Reading:
 	The SWARM-BOTS Project 
 	Design and Working of Jasmine Swarm Robot
 	Reading up on all different types of electrical component
+	Communication, Diversity and Learning: Cornerstones of Swarm Behavior
+
 Tasks:
 	Coding:
 		C code to simulate a simple PID controller
