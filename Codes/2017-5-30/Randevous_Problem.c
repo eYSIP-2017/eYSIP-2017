@@ -15,13 +15,21 @@ int get_sensor_value()
 
 void generate_sensor_values(int * array)
 {
-	int i;
-	for(i=0;i<8;i++)
-	{
-		array[i] = get_sensor_value();
-		sleep(1);
-		// scanf("%d",&array[i]);
-	}
+	// int i;
+	// for(i=0;i<8;i++)
+	// {
+	// 	// array[i] = get_sensor_value();
+	// 	// sleep(1);
+	// 	scanf("%d",&array[i]);
+	// }
+	array[0] = 150;
+	array[1] = 150;
+	array[2] = 40;
+	array[3] = 150;
+	array[4] = 150;
+	array[5] = 150;
+	array[6] = 150;
+	array[7] = 150;
 	return;
 }
 
@@ -47,7 +55,8 @@ int find_centroid(int * sensor_values,int * centroid)
 	{
 		if(sensor_values[i] < 100)
 		{
-			// printf("%f %f\n", sensor_values[i] * cos(i * 45 * PI / 180), sensor_values[i] * sin(i * 45 * PI / 180));
+			printf("%d %f %f\n",sensor_values[i], sensor_values[i] * cos(i * 45 * PI / 180), sensor_values[i] * sin(i * 45 * PI / 180));
+			printf("Angle : %f\n", i * 45 * PI / 180);
 			x += sensor_values[i] * cos(i * 45 * PI / 180);
 			y += sensor_values[i] * sin(i * 45 * PI / 180);
 			counter++;
@@ -58,9 +67,10 @@ int find_centroid(int * sensor_values,int * centroid)
 	y = y/(counter+1);
 	printf("x: %f y: %f\n", x,y);
 	int distance = sqrt(pow(x,2)+pow(y,2));
+	printf("%f\n", y/x);
 	int angle = atan(y/x) * 180 / PI;
 	printf("distance: %d angle: %d\n", distance,angle);
-	if(x< 0 && y > 0)
+	if(x < 0 && y > 0)
 	{
 		angle = 90 - angle;
 	}
@@ -77,16 +87,16 @@ int find_centroid(int * sensor_values,int * centroid)
 int main()
 {
 	int bot1_sensor_values[8];
-	int bot2_sensor_values[8];
+	// int bot2_sensor_values[8];
 	generate_sensor_values(bot1_sensor_values);
-	generate_sensor_values(bot2_sensor_values);
+	// generate_sensor_values(bot2_sensor_values);
 	print_sensor_values("Bot 1",bot1_sensor_values,8);
-	print_sensor_values("Bot 2",bot2_sensor_values,8);
+	// print_sensor_values("Bot 2",bot2_sensor_values,8);
 	int bot1_centroid[2];
-	int bot2_centroid[2];
+	// int bot2_centroid[2];
 	find_centroid(bot1_sensor_values,bot1_centroid);
-	find_centroid(bot2_sensor_values,bot2_centroid);
+	// find_centroid(bot2_sensor_values,bot2_centroid);
 	print_sensor_values("Centroid Bot 1",bot1_centroid,2);
-	print_sensor_values("Centroid Bot 2",bot2_centroid,2);
+	// print_sensor_values("Centroid Bot 2",bot2_centroid,2);
 	return 0;
 }
