@@ -25,13 +25,36 @@ void get_sensor_values(int * array)
 	array[5] = 150;
 	array[6] = ADC_Conversion(8);
 	array[7] = ADC_Conversion(7);
+	
+	/* array[0] = 150;
+	array[1] = 150;
+	array[2] = 40;
+	array[3] = 150;
+	array[4] = 150;
+	array[5] = 150;
+	array[6] = 150;
+	array[7] = 150; */
 	return;
 }
-
+int attan(int x, int y)
+{
+	if(x == 0 && y > 0)
+	{
+		return 90;
+	}
+	else if(x == 0 && y < 0)
+	{
+		return 270;
+	}
+	else
+	{
+		return atan(y/x) * 180 / PI;
+	}
+}
 int find_centroid(int * sensor_values,int * centroid)
 {
-	float x = 0;
-	float y = 0;
+	int x = 0;
+	int y = 0;
 	int i;
 	int counter = 0;
 	for(i=0;i<8;i++)
@@ -47,8 +70,8 @@ int find_centroid(int * sensor_values,int * centroid)
 	x = x/(counter+1);
 	y = y/(counter+1);
 	int distance = sqrt(pow(x,2)+pow(y,2));
-	int angle = atan(y/x) * 180 / PI;
-	if(x< 0 && y > 0)
+	int angle = attan(x,y);
+	if(x < 0 && y > 0)
 	{
 		angle = 90 - angle;
 	}
@@ -61,14 +84,13 @@ int find_centroid(int * sensor_values,int * centroid)
 	return 0;
 }
 
-void print_sensor_values(int * array,int n)
+void print_sensor_values(int * array)
 {
-	int i;
-	for(i=0;i<n;i++)
-	{
-		lcd_print(1,5,array[i],3);
-		_delay_ms(2000);
-	}
+	lcd_print(1,5,array[0],3);
+	lcd_print(1,9,array[1],3);
+	lcd_print(1,13,array[2],3);
+	lcd_print(2,5,array[6],3);
+	lcd_print(2,9,array[7],3);
 	return;
 }
 
@@ -83,11 +105,14 @@ int main(void)
     //_delay_ms(5000);
 	int bot_sensor_values[8];
 	get_sensor_values(bot_sensor_values);
-	print_sensor_values(bot_sensor_values,8);
+	print_sensor_values(bot_sensor_values);
 	int bot_centroid[2];
-	find_centroid(bot_sensor_values,bot_centroid);	
+	find_centroid(bot_sensor_values,bot_centroid);
+	lcd_print(2,1,bot_centroid[1],3);
+	_delay_ms(2000);
 	if(bot_centroid[1] < 0)
 	{
+		lcd_print(2,5,100,3);
 		bot_centroid[1] = 360 + bot_centroid[1];
 	}
 	lcd_print(1,1,bot_centroid[0],3);
