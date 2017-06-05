@@ -2,6 +2,8 @@
 \beamer@sectionintoc {1}{Overview of Project}{2}{0}{1}
 \beamer@sectionintoc {2}{Overview of Task}{3}{0}{2}
 \beamer@sectionintoc {3}{Task Accomplised}{4}{0}{3}
-\beamer@sectionintoc {4}{Challenges Faced}{5}{0}{4}
-\beamer@sectionintoc {5}{Future Plans}{6}{0}{5}
-\beamer@sectionintoc {6}{Thank You}{7}{0}{6}
+\beamer@sectionintoc {4}{Basic Design of Minibot}{5}{0}{4}
+\beamer@sectionintoc {5}{PCB Design and Schematics}{6}{0}{5}
+\beamer@sectionintoc {6}{Challenges Faced}{7}{0}{6}
+\beamer@sectionintoc {7}{Future Plans}{8}{0}{7}
+\beamer@sectionintoc {8}{Thank You}{9}{0}{8}
