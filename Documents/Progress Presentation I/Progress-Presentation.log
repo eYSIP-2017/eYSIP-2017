@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2017.3.9)  6 JUN 2017 01:10
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2017.3.9)  6 JUN 2017 01:28
 entering extended mode
 **Progress-Presentation.tex
 
@@ -944,12 +944,12 @@ File: ot1mathkerncmss.fd 2012/04/26
 
 ] [4
 
-] <basic_design.jpg, id=182, 462.72874pt x 606.265pt>
+] <basic_design.jpg, id=182, 1003.75pt x 1235.61626pt>
 File: basic_design.jpg Graphic file (type jpg)
 
 <use basic_design.jpg>
 Package pdftex.def Info: basic_design.jpg used on input line 106.
-(pdftex.def)             Requested size: 150.56305pt x 197.26506pt.
+(pdftex.def)             Requested size: 160.60059pt x 197.68378pt.
  [5
 
  <F:/e-Yantra 2017/Internship/eYSIP-2017_DistributedRobotics/Documents/Progress
@@ -1003,7 +1003,7 @@ Here is how much of TeX's memory you used:
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/P
 rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss9.pfb><C:/Prog
 ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb>
-Output written on Progress-Presentation.pdf (9 pages, 288517 bytes).
+Output written on Progress-Presentation.pdf (9 pages, 422118 bytes).
 PDF statistics:
  377 PDF objects out of 1000 (max. 8388607)
  29 named destinations out of 1000 (max. 500000)
