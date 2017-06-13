@@ -1,0 +1,20 @@
+
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Atmel Studio Solution File, Format Version 11.00
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "20170610-IR_PWM_Reciever", "20170610-IR_PWM_Reciever\20170610-IR_PWM_Reciever_6_0.cproj", "{DACE30D3-803C-422A-A9CE-7092F541E54C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DACE30D3-803C-422A-A9CE-7092F541E54C}.Debug|AVR.ActiveCfg = Debug|AVR
+		{DACE30D3-803C-422A-A9CE-7092F541E54C}.Debug|AVR.Build.0 = Debug|AVR
+		{DACE30D3-803C-422A-A9CE-7092F541E54C}.Release|AVR.ActiveCfg = Release|AVR
+		{DACE30D3-803C-422A-A9CE-7092F541E54C}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

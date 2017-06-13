@@ -23,10 +23,6 @@ void turn_off_ir_proximity()
 }
 int main(void)
 {
-	init_devices1();	//To initiate the ports in the device
-	init_devices0();	//To initiate the ports in the device
-	init_devices2();	//To initiate the ports in the device
-	init_devices3();
 	lcd_set_4bit();		//To initialise lcd ports
 	lcd_init();
     while(1)
