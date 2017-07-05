@@ -17,13 +17,13 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING
   6 .debug_abbrev 000002be  00000000  00000000  000088bd  2**0
                   CONTENTS, READONLY, DEBUGGING
-  7 .debug_line   000008f8  00000000  00000000  00008b7b  2**0
+  7 .debug_line   000008fb  00000000  00000000  00008b7b  2**0
                   CONTENTS, READONLY, DEBUGGING
-  8 .debug_frame  0000092c  00000000  00000000  00009474  2**2
+  8 .debug_frame  0000092c  00000000  00000000  00009478  2**2
                   CONTENTS, READONLY, DEBUGGING
-  9 .debug_str    00000616  00000000  00000000  00009da0  2**0
+  9 .debug_str    00000636  00000000  00000000  00009da4  2**0
                   CONTENTS, READONLY, DEBUGGING
- 10 .debug_loc    00001264  00000000  00000000  0000a3b6  2**0
+ 10 .debug_loc    00001264  00000000  00000000  0000a3da  2**0
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
@@ -5539,10 +5539,10 @@ void uart0_init(void)
     241e:	08 95       	ret
 
 00002420 <get_sensor_values>:
-#include "dependency.c"
 
 #define PI 3.14159265
 
+//Function to get the sensor values
 void get_sensor_values(int * array)
 {
     2420:	0f 93       	push	r16
@@ -5659,6 +5659,7 @@ void get_sensor_values(int * array)
     24ec:	08 95       	ret
 
 000024ee <attan>:
+//Small tweak to atan() function
 int attan(int x, int y)
 {
     24ee:	cf 93       	push	r28
@@ -5761,6 +5762,7 @@ int attan(int x, int y)
     25a2:	08 95       	ret
 
 000025a4 <find_centroid>:
+//Function computes the centroid of the shape formed by the robots as vertices.
 int find_centroid(int * sensor_values,int * centroid)
 {
     25a4:	af 92       	push	r10
@@ -5785,21 +5787,23 @@ int find_centroid(int * sensor_values,int * centroid)
     25ca:	8d 87       	std	Y+13, r24	; 0x0d
     25cc:	78 8b       	std	Y+16, r23	; 0x10
     25ce:	6f 87       	std	Y+15, r22	; 0x0f
-	int x = 0;
+	int x = 0; //x co-ordinate of centroid
     25d0:	1a 82       	std	Y+2, r1	; 0x02
     25d2:	19 82       	std	Y+1, r1	; 0x01
-	int y = 0;
+	int y = 0; //y co-ordinate of centroid
     25d4:	1c 82       	std	Y+4, r1	; 0x04
     25d6:	1b 82       	std	Y+3, r1	; 0x03
 	int i;
-	int counter = 0;
+	int counter = 0; //number of robots in the shape (number of vertices)
     25d8:	18 86       	std	Y+8, r1	; 0x08
     25da:	1f 82       	std	Y+7, r1	; 0x07
+	//8 Sensor - run loop 8 times
 	for(i=0;i<8;i++)
     25dc:	1e 82       	std	Y+6, r1	; 0x06
     25de:	1d 82       	std	Y+5, r1	; 0x05
     25e0:	e5 c0       	rjmp	.+458    	; 0x27ac <find_centroid+0x208>
 	{
+		//Check if robot is in the range 100mm
 		if(sensor_values[i] < 100)
     25e2:	8d 81       	ldd	r24, Y+5	; 0x05
     25e4:	9e 81       	ldd	r25, Y+6	; 0x06
@@ -5817,7 +5821,7 @@ int find_centroid(int * sensor_values,int * centroid)
     25fc:	0c f0       	brlt	.+2      	; 0x2600 <find_centroid+0x5c>
     25fe:	d1 c0       	rjmp	.+418    	; 0x27a2 <find_centroid+0x1fe>
 		{
-			// printf("%f %f\n", sensor_values[i] * cos(i * 45 * PI / 180), sensor_values[i] * sin(i * 45 * PI / 180));
+			//Convert polar co-ordinates to cartesian co-ordinates
 			x += sensor_values[i] * cos(i * 45 * PI / 180);
     2600:	89 81       	ldd	r24, Y+1	; 0x01
     2602:	9a 81       	ldd	r25, Y+2	; 0x02
@@ -6012,11 +6016,11 @@ int find_centroid(int * sensor_values,int * centroid)
     279c:	01 96       	adiw	r24, 0x01	; 1
     279e:	98 87       	std	Y+8, r25	; 0x08
     27a0:	8f 83       	std	Y+7, r24	; 0x07
-{
-	int x = 0;
-	int y = 0;
+	int x = 0; //x co-ordinate of centroid
+	int y = 0; //y co-ordinate of centroid
 	int i;
-	int counter = 0;
+	int counter = 0; //number of robots in the shape (number of vertices)
+	//8 Sensor - run loop 8 times
 	for(i=0;i<8;i++)
     27a2:	8d 81       	ldd	r24, Y+5	; 0x05
     27a4:	9e 81       	ldd	r25, Y+6	; 0x06
@@ -6029,11 +6033,11 @@ int find_centroid(int * sensor_values,int * centroid)
     27b2:	91 05       	cpc	r25, r1
     27b4:	0c f4       	brge	.+2      	; 0x27b8 <find_centroid+0x214>
     27b6:	15 cf       	rjmp	.-470    	; 0x25e2 <find_centroid+0x3e>
-			x += sensor_values[i] * cos(i * 45 * PI / 180);
 			y += sensor_values[i] * sin(i * 45 * PI / 180);
 			counter++;
 		}
 	}
+	//centroid = (sum of all cordinates)/(number of vetices)
 	x = x/(counter+1);
     27b8:	8f 81       	ldd	r24, Y+7	; 0x07
     27ba:	98 85       	ldd	r25, Y+8	; 0x08
@@ -6060,7 +6064,8 @@ int find_centroid(int * sensor_values,int * centroid)
     27e6:	9b 01       	movw	r18, r22
     27e8:	3c 83       	std	Y+4, r19	; 0x04
     27ea:	2b 83       	std	Y+3, r18	; 0x03
-	int distance = sqrt(pow(x,2)+pow(y,2));
+	
+	int distance = sqrt(pow(x,2)+pow(y,2)); //Distance of the centroid with robot at (0,0) 
     27ec:	89 81       	ldd	r24, Y+1	; 0x01
     27ee:	9a 81       	ldd	r25, Y+2	; 0x02
     27f0:	aa 27       	eor	r26, r26
@@ -6114,7 +6119,7 @@ int find_centroid(int * sensor_values,int * centroid)
     285e:	cb 01       	movw	r24, r22
     2860:	9c 87       	std	Y+12, r25	; 0x0c
     2862:	8b 87       	std	Y+11, r24	; 0x0b
-	int angle = attan(x,y);
+	int angle = attan(x,y); //Angle to rotate by with the robot facing positive x-axis
     2864:	89 81       	ldd	r24, Y+1	; 0x01
     2866:	9a 81       	ldd	r25, Y+2	; 0x02
     2868:	2b 81       	ldd	r18, Y+3	; 0x03
@@ -6123,6 +6128,7 @@ int find_centroid(int * sensor_values,int * centroid)
     286e:	0e 94 77 12 	call	0x24ee	; 0x24ee <attan>
     2872:	9a 87       	std	Y+10, r25	; 0x0a
     2874:	89 87       	std	Y+9, r24	; 0x09
+	//aatan function gives angle of range (90,-90), we need convert it (0,360)
 	if(x < 0 && y > 0)
     2876:	89 81       	ldd	r24, Y+1	; 0x01
     2878:	9a 81       	ldd	r25, Y+2	; 0x02
@@ -6206,6 +6212,7 @@ int find_centroid(int * sensor_values,int * centroid)
 
 000028fe <print_sensor_values>:
 
+//Print the sensor values on LCD
 void print_sensor_values(int * array)
 {
     28fe:	cf 93       	push	r28
@@ -6295,6 +6302,7 @@ void print_sensor_values(int * array)
 
 000029a2 <main>:
 
+//Call the function, and analyse the output
 int main(void)
 {
     29a2:	0f 93       	push	r16
@@ -6544,11 +6552,11 @@ int main(void)
     2b4a:	23 e0       	ldi	r18, 0x03	; 3
     2b4c:	30 e0       	ldi	r19, 0x00	; 0
     2b4e:	0e 94 da 0a 	call	0x15b4	; 0x15b4 <lcd_print>
-	left_degrees(bot_centroid[1]);
+	left_degrees(bot_centroid[1]); //Rotate left by the mentioned degrees
     2b52:	89 a1       	lds	r24, 0x49
     2b54:	9a a1       	lds	r25, 0x4a
     2b56:	0e 94 6a 0e 	call	0x1cd4	; 0x1cd4 <left_degrees>
-	forward_mm(bot_centroid[0]*10);
+	forward_mm(bot_centroid[0]*10); //Move forward by mentioned distance in mm
     2b5a:	8f 8d       	ldd	r24, Y+31	; 0x1f
     2b5c:	98 a1       	lds	r25, 0x48
     2b5e:	88 0f       	add	r24, r24
@@ -6561,6 +6569,8 @@ int main(void)
     2b6c:	82 0f       	add	r24, r18
     2b6e:	93 1f       	adc	r25, r19
     2b70:	0e 94 3e 0e 	call	0x1c7c	; 0x1c7c <forward_mm>
+	
+	return 0;
     2b74:	80 e0       	ldi	r24, 0x00	; 0
     2b76:	90 e0       	ldi	r25, 0x00	; 0
     2b78:	a2 96       	adiw	r28, 0x22	; 34

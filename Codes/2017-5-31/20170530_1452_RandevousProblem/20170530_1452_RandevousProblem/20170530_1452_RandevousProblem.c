@@ -2,7 +2,10 @@
  * _20170530_1452_RandevousProblem.c
  *
  * Created: 30-05-2017 14:53:02
- *  Author: Hariharan
+ * Author: R Hariharan
+ * Description:
+	 The robot can sense the surrounding using IR proximity sensor (8 placed 45 degrees apart). 
+	 The centroid of the shape formed by all the robots as vertices is calculated. This is the point the robot travels to.
  */ 
 
 #define F_CPU 14745600
@@ -15,6 +18,7 @@
 
 #define PI 3.14159265
 
+//Function to get the sensor values
 void get_sensor_values(int * array)
 {
 	array[0] = ADC_Conversion(6);
@@ -36,6 +40,7 @@ void get_sensor_values(int * array)
 	array[7] = 150; */
 	return;
 }
+//Small tweak to atan() function
 int attan(int x, int y)
 {
 	if(x == 0 && y > 0)
@@ -51,26 +56,32 @@ int attan(int x, int y)
 		return atan(y/x) * 180 / PI;
 	}
 }
+//Function computes the centroid of the shape formed by the robots as vertices.
 int find_centroid(int * sensor_values,int * centroid)
 {
-	int x = 0;
-	int y = 0;
+	int x = 0; //x co-ordinate of centroid
+	int y = 0; //y co-ordinate of centroid
 	int i;
-	int counter = 0;
+	int counter = 0; //number of robots in the shape (number of vertices)
+	//8 Sensor - run loop 8 times
 	for(i=0;i<8;i++)
 	{
+		//Check if robot is in the range 100mm
 		if(sensor_values[i] < 100)
 		{
-			// printf("%f %f\n", sensor_values[i] * cos(i * 45 * PI / 180), sensor_values[i] * sin(i * 45 * PI / 180));
+			//Convert polar co-ordinates to cartesian co-ordinates
 			x += sensor_values[i] * cos(i * 45 * PI / 180);
 			y += sensor_values[i] * sin(i * 45 * PI / 180);
 			counter++;
 		}
 	}
+	//centroid = (sum of all cordinates)/(number of vetices)
 	x = x/(counter+1);
 	y = y/(counter+1);
-	int distance = sqrt(pow(x,2)+pow(y,2));
-	int angle = attan(x,y);
+	
+	int distance = sqrt(pow(x,2)+pow(y,2)); //Distance of the centroid with robot at (0,0) 
+	int angle = attan(x,y); //Angle to rotate by with the robot facing positive x-axis
+	//aatan function gives angle of range (90,-90), we need convert it (0,360)
 	if(x < 0 && y > 0)
 	{
 		angle = 90 - angle;
@@ -84,6 +95,7 @@ int find_centroid(int * sensor_values,int * centroid)
 	return 0;
 }
 
+//Print the sensor values on LCD
 void print_sensor_values(int * array)
 {
 	lcd_print(1,5,array[0],3);
@@ -94,6 +106,7 @@ void print_sensor_values(int * array)
 	return;
 }
 
+//Call the function, and analyse the output
 int main(void)
 {
 	init_devices1();	//To initiate the ports in the device
@@ -117,6 +130,8 @@ int main(void)
 	}
 	lcd_print(1,1,bot_centroid[0],3);
 	lcd_print(2,1,bot_centroid[1],3);
-	left_degrees(bot_centroid[1]);
-	forward_mm(bot_centroid[0]*10);
+	left_degrees(bot_centroid[1]); //Rotate left by the mentioned degrees
+	forward_mm(bot_centroid[0]*10); //Move forward by mentioned distance in mm
+	
+	return 0;
 }
