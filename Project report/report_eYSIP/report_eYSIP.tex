@@ -1,0 +1,223 @@
+\documentclass[a4paper,12pt,oneside]{book}
+
+%-------------------------------Start of the Preable------------------------------------------------
+\usepackage[english]{babel}
+\usepackage{blindtext}
+%packagr for hyperlinks
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+
+\urlstyle{same}
+%use of package fancy header
+\usepackage{fancyhdr}
+\setlength\headheight{26pt}
+\fancyhf{}
+%\rhead{\includegraphics[width=1cm]{logo}}
+\lhead{\rightmark}
+\rhead{\includegraphics[width=1cm]{logo}}
+\fancyfoot[RE, RO]{\thepage}
+\fancyfoot[CE, CO]{\href{http://www.e-yantra.org}{www.e-yantra.org}}
+
+\pagestyle{fancy}
+
+%use of package for section title formatting
+\usepackage{titlesec}
+\titleformat{\chapter}
+  {\Large\bfseries} % format
+  {}                % label
+  {0pt}             % sep
+  {\huge}           % before-code
+ 
+%use of package tcolorbox for colorful textbox
+\usepackage[most]{tcolorbox}
+\tcbset{colback=cyan!5!white,colframe=cyan!75!black,halign title = flush center}
+
+\newtcolorbox{mybox}[1]{colback=cyan!5!white,
+colframe=cyan!75!black,fonttitle=\bfseries,
+title=\textbf{\Large{#1}}}
+
+%use of package marginnote for notes in margin
+\usepackage{marginnote}
+
+%use of packgage watermark for pages
+%\usepackage{draftwatermark}
+%\SetWatermarkText{\includegraphics{logo}}
+\usepackage[scale=2,opacity=0.1,angle=0]{background}
+\backgroundsetup{
+contents={\includegraphics{logo}}
+}
+
+%use of newcommand for keywords color
+\usepackage{xcolor}
+\newcommand{\keyword}[1]{\textcolor{red}{\textbf{#1}}}
+
+%package for inserting pictures
+\usepackage{graphicx}
+
+%package for highlighting
+\usepackage{color,soul}
+
+%new command for table
+\newcommand{\head}[1]{\textnormal{\textbf{#1}}}
+
+
+%----------------------End of the Preamble---------------------------------------
+
+
+\begin{document}
+
+%---------------------Title Page------------------------------------------------
+\begin{titlepage}
+\raggedright
+{\Large eYSIP2017\\[1cm]}
+{\Huge\scshape Distributed robotics, multi swarm robots \\[.1in]}
+\vfill
+\begin{flushright}
+{\large Intern 1 Mr. Chinmay C \\}
+{\large Intern 2 Mr. R Hariharan \\}
+{\large Mentor 1 Ms. Rutuja \\}
+{\large Mentor 2 Ms. Deepa \\}
+{\large Duration of Internship: $ 22/05/2017-07/07/2017 $ \\}
+\end{flushright}
+
+{\itshape 2017, e-Yantra Publication}
+\end{titlepage}
+%-------------------------------------------------------------------------------
+
+\chapter[Project Tag]{Project Name}
+\section*{Abstract}
+Swarm robotics is an approach to the coordination of multirobot systems which consist of large numbers of mostly simple physical robots. It is supposed that a desired collective behavior emerges from the interactions between the robots and interactions of robots with the environment. This approach emerged on the field of artificial swarm intelligence, as well as the biological studies of insects, ants and other fields in nature, where swarm behaviour occurs.
+
+\subsection*{Following points are completed:}
+\begin{itemize}
+\item Study the concepts of swarm robotics and get familiar
+with different robots available \\
+\item Study the kinematics of differential drive configuration \\
+\item Selecting appropriate sensors to be added \\
+\item Designing the pcbs \\
+\item Assembling all the components \\
+\item Making of Minibots \\
+\item Testing of robots \\
+\item Solve rendezvous problem using homogenous controller
+gain \\
+\item Solve rendezvous problem using heterogenous controller
+gain \\
+\end{itemize}
+
+\section{Hardware parts}
+\begin{itemize}
+  \item List of hardware: \href{./COMPONENT LIST}{COMPONENT LIST},
+  \item Detail of each hardware: Atmega16 \href{./datasheet/atmega16.pdf}{Datasheet}, {Chip component, Lamington road, Mumbai}, 
+  \item Detail of each hardware: CD40106 \href{./datasheet/CD40106.pdf}{Datasheet}, {Chip component, Lamington road, Mumbai}, 
+  \item Detail of each hardware: L293D \href{./datasheet/L293.pdf}{Datasheet}, {GALA Electronics, Lamington road, Mumbai}, 
+  \item Detail of each hardware: LM158 \href{./datasheet/lm158-n.pdf}{Datasheet}, {Chip component, Lamington road, Mumbai}, 
+  \item Connection diagram
+\end{itemize}
+
+\section{Software used}
+\begin{itemize}
+  \item List of softwares used are V-rep, Fusion 360, AvrDude, Avrgcc, Texstudio, Git 
+  \item Details of software: V-rep: 3.4.0, \href{http://www.coppeliarobotics.com/}{download link}, 
+  \item Installation steps \href{http://www.coppeliarobotics.com/resources.html}{download link},
+  \item Details of software: Fusion 360: 3.4.0, \href{https://www.autodesk.com/products/fusion-360/students-teachers-educators}{download link},
+  \item Installation steps \href{https://www.autodesk.com/products/fusion-360/students-teachers-educators}{download link},
+  \item Details of software: AvrDude, \href{http://www.nongnu.org/avrdude/}{download link},
+  \item Details of software: Avrgcc, \href{https://gcc.gnu.org/wiki/avr-gcc}{download link},
+  \item Details of software: texstudio, \href{http://www.texstudio.org/}{download link},
+  \item Installation steps \href{http://www.texstudio.org/}{download link},
+  \item Details of software: git, \href{https://git-scm.com/}{download link},
+  \item Installation steps \href{https://git-scm.com/}{download link},
+\end{itemize}
+
+\section{Assembly of hardware}
+Circuit diagram and Steps of assembly of hardware with pictures for each step
+
+
+\subsection*{Circuit Diagram}
+Circuit schematic, simplified circuit diagram , block diagram of system
+\hfill\\
+\begin{figure}[h!]
+	\caption{A picture of the swarm robots!}
+	\includegraphics[width=\textwidth]{./Pictures/PCB_back}		
+\end{figure}	
+\hfill\\
+\subsection*{Step 1}
+Designing schematics of PCB and routing layout of PCB and getting them printed.
+\hfill\\
+\begin{figure}[h!]
+	\caption{A picture of the swarm robots!}
+	\includegraphics[width=\textwidth]{./Pictures/PCB_front}		
+\end{figure}	
+\hfill\\
+\subsection*{Step 2}
+Designing chassis on 
+\hfill\\
+\begin{figure}[h!]
+	\caption{A picture of the swarm robots!}
+	\includegraphics[width=\textwidth]{./Pictures/Chassis_Design}		
+\end{figure}	
+\hfill\\
+\subsection*{Step 3}
+Steps for assembling part 3
+\hfill\\
+\begin{figure}[h!]
+	\caption{A picture of the swarm robots!}
+	\includegraphics[width=\textwidth]{./Pictures/version2_top}		
+\end{figure}	
+\hfill\\
+
+\section{Software and Code}
+\href{https://github.com/eYSIP-2017/eYSIP-2017_DistributedRobotics.git}{Github link} for the repository of code
+
+Brief explanation of various parts of code 
+
+\section{Use and Demo}
+Final Setup Image
+
+User Instruction for demonstration
+
+\href{http://www.youtube.com}{Youtube Link} of demonstration video 
+
+\section{Future Work}
+What can be done to take this work ahead in future as projects.
+
+\section{Bug report and Challenges}
+\hfill\\
+	\includegraphics[width=\textwidth]{./Capture2.png}
+\hfill\\
+Bugs (fixed)
+Pin 3 of both encoders was supposed to be shorted to ground and connection to buffer connected to led was supposed to be shorted to pin 4. The bug is fixed by shorting pin 3 to ground externally.
+Any failure or challenges faced during project
+
+\begin{thebibliography}{li}
+\bibitem{wavelan97}
+Ayan Dutta, Sruti Gan Chaudhuri, Suparno Datta and Krishnendu Mukhopadhyaya,
+{\em Circle formation by asynchronous fat robots with limited visiblity}
+
+\bibitem{wavelan97}
+Sruti Gan Chaudhuri and Krishnendu Mukhopadhyaya,
+{\em Gathering Asynchronous Transparent Fat Robots}
+
+\bibitem{wavelan97}
+Ayan Dutta, Sruti Gan Chaudhuri, Suparno Datta and Krishnendu Mukhopadhyaya,
+{\em Circle formation by asynchronous fat robots}
+
+\bibitem{wavelan97}
+Swapnil Ghike and Krishnendu Mukhopadhyaya,
+{\em A distributed algorithm for pattern formation by autonomous robots, with no agreement on coordinate compass}
+
+\bibitem{wavelan97}
+Avik Chatterjee, Sruti Gan Chaudhuri, Krishnendu Mukhopadhyaya,
+{\em Gathering asynchronous swarm robots under non uniform limited visibilities}
+
+\bibitem{wavelan97}
+Krishnendu Mukhopadhyaya,
+{\em Distributed swarm robotics for swarm robots}
+\end{thebibliography}
+
+\end{document}
