@@ -1,8 +1,9 @@
 The V-REP folder Contains Code, Model and Scene for __Circle Formation of Distributed Robots__
+
 Refrence for the algorithm used: "Circle Formation by Asynchronous Fat Robots
 with Limited Visibility"
 
-available at : https://pdfs.semanticscholar.org/d91c/fba8866da0ac3147664a58bd62471d2acbdf.pdf
+Available at : https://pdfs.semanticscholar.org/d91c/fba8866da0ac3147664a58bd62471d2acbdf.pdf
 
 We used V-REP simulator (EDU licence) to see the working of our algorithms.
 Platform worked on : Ubuntu 16.04 
