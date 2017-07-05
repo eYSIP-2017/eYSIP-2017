@@ -1,4 +1,10 @@
 -- DO NOT WRITE CODE OUTSIDE OF THE if-then-end SECTIONS BELOW!! (unless the code is a function definition)
+
+-- Author : R Hariharan
+-- Description : This is a child script for a our model which make it go to a perticular co-odrinate using a P controller
+-- Refrence to all Regular API function used here : http://www.coppeliarobotics.com/helpFiles/en/apiFunctionListCategory.htm
+
+-- Function reduces the precision of the number to 3 decimal places
 function cleanNumbers(number)
     number = tonumber(string.format("%.3f",number))
     if (number == 0) then
@@ -7,57 +13,37 @@ function cleanNumbers(number)
     return number
 end
 
+-- Function to set velocity of the wheels of the robot
 function setVelocity(velLeft,velRight)
-    local velocity_left = simGetJointTargetVelocity(leftWheel)
-    local velocity_right = simGetJointTargetVelocity(rightWheel)
-    local velocity_difference_left = velLeft - velocity_left
-    local velocity_difference_right = velRight - velocity_right
-    if(math.abs(velocity_difference_left) > 5 or math.abs(velocity_difference_right) > 5) then
-        local slope = (velRight - velocity_right)/(velLeft - velocity_left)
-        local y_intercept = velRight - (velLeft * slope)
-        local increment = 0.1
-        if(velLeft < velocity_left) then
-            local increment = -0.1 
-        end
-
-        for i=velocity_left,velLeft,increment
-        do
-           local rightVelocity = i * slope + y_intercept
-           simSetJointTargetVelocity(leftWheel,i)
-           simGetJointTargetVelocity(rightWheel,rightVelocity) 
-        end
-    else
-        simSetJointTargetVelocity(leftWheel,velLeft)
-        simSetJointTargetVelocity(rightWheel,velRight)
-    end
+    simSetJointTargetVelocity(leftWheel,velLeft)
+    simSetJointTargetVelocity(rightWheel,velRight)
 end
 
+-- Function to compute the velocity of the left and right wheel using P-controller
 function getVelocityOfWheels(x,y)
-	-- body
-    KP = 0.013
-	position = simGetObjectPosition(eYSIP_bot,-1)
-    orientation = simGetObjectOrientation(eYSIP_bot,-1)
+    KP = 0.013 -- Propotional gain
+	position = simGetObjectPosition(eYSIP_bot,-1) -- Get the global position of the robot
+    orientation = simGetObjectOrientation(eYSIP_bot,-1) -- Get the global orientation of the robot
 
+    -- Calculate the distance error and angle error
     distance_error =  math.sqrt(((x - cleanNumbers(position[1]))^2 + (y - cleanNumbers(position[2]))^2))
-    local_angle_error = math.atan2(y - position[2], x - position[1])
-    local_angle_error = local_angle_error * 180 / math.pi + 90
+    local_angle_error = math.atan2(y - position[2], x - position[1]) -- the angle to which the point lies
+    local_angle_error = local_angle_error * 180 / math.pi + 90 -- Correction of 90 degrees because the orientation across z-axis is measured from negative y-axis
     print("______________________",local_angle_error,angle_error)
     if(local_angle_error > 180) then
         local_angle_error = local_angle_error - 360
     end
     angle_error = local_angle_error - (cleanNumbers(orientation[3]) * 180 / math.pi)
-    -- angle_error = angle_error + (135 - local_angle_error) 
     print("______________________",local_angle_error,angle_error)
 
     omega = KP * cleanNumbers(angle_error)
-    -- print("______________________________________ OMEGA",omega)
     velocity = KP * cleanNumbers(distance_error)
-    robotLength = 0.08
-    wheelRadius = 0.015
+    robotLength = 0.08 -- our model's length 
+    wheelRadius = 0.015 -- our model's wheel radius
 
+    -- Calculate the velocity based the equation of differential drive system
     velocity_left = (2 * velocity - 0.08 * omega) / 0.03
     velocity_right = (2 * velocity + 0.08 * omega) / 0.03
-
     return {cleanNumbers(velocity_left),cleanNumbers(velocity_right)}
 end
 
@@ -91,6 +77,7 @@ if (sim_call_type==sim_childscriptcall_initialization) then
     -- Refer also to simGetCollisionhandle, simGetDistanceHandle, simGetIkGroupHandle, etc.
     --
     -- Following 2 instructions might also be useful: simGetNameSuffix and simSetNameSuffix
+    -- Getting All sensor objects, wheel ojects and the robot
     sensor0 = simGetObjectHandle("Sensor0")
     sensor1 = simGetObjectHandle("Sensor1")
     sensor2 = simGetObjectHandle("Sensor2")
@@ -115,7 +102,7 @@ if (sim_call_type==sim_childscriptcall_actuation) then
     -- position[1]=position[1]+0.001
     -- simSetObjectPosition(handle,-1,position)
     if (sensorValues ~= 0) then
-    	local velocity = getVelocityOfWheels(-1,0)
+    	local velocity = getVelocityOfWheels(-1,0) -- Mention the co-ordinate the robot must go to
         print(velocity[1],velocity[2])
         setVelocity(velocity[1],velocity[2])
     end
