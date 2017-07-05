@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210) (preloaded format=pdflatex 2017.4.23)  5 JUL 2017 18:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210) (preloaded format=pdflatex 2017.4.23)  5 JUL 2017 19:18
 entering extended mode
 **./document.tex
 (document.tex
@@ -1024,7 +1024,7 @@ File: ./HardwareManual/Small_bots.jpg Graphic file (type jpg)
 <use ./HardwareManual/Small_bots.jpg>
 Package pdftex.def Info: ./HardwareManual/Small_bots.jpg used on input line 124
 .
-(pdftex.def)             Requested size: 390.0pt x 292.49709pt.
+(pdftex.def)             Requested size: 301.1261pt x 225.83585pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 121--127
 
@@ -1033,54 +1033,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 121--127
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./Block_Diagram.jpg, id=65, 126.4725pt x 99.2508pt>
-File: ./Block_Diagram.jpg Graphic file (type jpg)
- <use ./Block_Diagram.jpg>
-Package pdftex.def Info: ./Block_Diagram.jpg used on input line 132.
-(pdftex.def)             Requested size: 390.0pt x 306.06438pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 135--136
-
- []
-
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png used on input line 140.
+Package pdftex.def Info: logo.png used on input line 127.
 (pdftex.def)             Requested size: 123.46092pt x 131.49092pt.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.140 		\item{
-              \textbf{\large{Sensors:}}\\Eight IR proximity sensors\\Two Pos...
-[1
+l.127 	\newpage
+                [1
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 141--145
+] <./Block_Diagram.jpg, id=79, 126.4725pt x 99.2508pt>
+File: ./Block_Diagram.jpg Graphic file (type jpg)
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 145--146
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 146--148
-
- []
-
+<use ./Block_Diagram.jpg>
+Package pdftex.def Info: ./Block_Diagram.jpg used on input line 132.
+(pdftex.def)             Requested size: 301.1261pt x 236.31822pt.
 File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png used on input line 148.
+ <use logo.png>
+Package pdftex.def Info: logo.png used on input line 134.
 (pdftex.def)             Requested size: 123.46092pt x 131.49092pt.
 File: logo.png Graphic file (type png)
  <use logo.png>
-Package pdftex.def Info: logo.png used on input line 148.
+Package pdftex.def Info: logo.png used on input line 134.
 (pdftex.def)             Requested size: 28.45274pt x 30.30254pt.
 
 
@@ -1089,52 +1065,66 @@ Package Fancyhdr Warning: \headheight is too small (26.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 148--150
+[2 <./Block_Diagram.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 140--144
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 150--152
+Underfull \hbox (badness 10000) in paragraph at lines 144--145
 
  []
 
-<./HardwareManual/Front.jpg, id=90, 120.45pt x 120.45pt>
-File: ./HardwareManual/Front.jpg Graphic file (type jpg)
 
-<use ./HardwareManual/Front.jpg>
-Package pdftex.def Info: ./HardwareManual/Front.jpg used on input line 159.
-(pdftex.def)             Requested size: 390.0pt x 390.03894pt.
+Underfull \hbox (badness 10000) in paragraph at lines 145--147
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--162
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--149
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--151
 
  []
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png used on input line 162.
+Package pdftex.def Info: logo.png used on input line 153.
 (pdftex.def)             Requested size: 123.46092pt x 131.49092pt.
 File: logo.png Graphic file (type png)
  <use logo.png>
-Package pdftex.def Info: logo.png used on input line 162.
+Package pdftex.def Info: logo.png used on input line 153.
 (pdftex.def)             Requested size: 28.45274pt x 30.30254pt.
- [3 <./Block_Diagram.jpg>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 165.
+ [3]
+<./HardwareManual/Front.jpg, id=100, 120.45pt x 120.45pt>
+File: ./HardwareManual/Front.jpg Graphic file (type jpg)
 
+<use ./HardwareManual/Front.jpg>
+Package pdftex.def Info: ./HardwareManual/Front.jpg used on input line 158.
+(pdftex.def)             Requested size: 390.0pt x 390.03894pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--161
+
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 164.
 
 ("D:\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 165.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 164.
 File: logo.png Graphic file (type png)
  <use logo.png>
-Package pdftex.def Info: logo.png used on input line 169.
+Package pdftex.def Info: logo.png used on input line 168.
 (pdftex.def)             Requested size: 123.46092pt x 131.49092pt.
 File: logo.png Graphic file (type png)
 
 <use logo.png>
-Package pdftex.def Info: logo.png used on input line 169.
+Package pdftex.def Info: logo.png used on input line 168.
 (pdftex.def)             Requested size: 28.45274pt x 30.30254pt.
  [4 <./HardwareManual/Front.jpg>]
 <./HardwareManual/BatteryIndication.jpg, id=107, 120.45pt x 120.45pt>
@@ -1142,25 +1132,25 @@ File: ./HardwareManual/BatteryIndication.jpg Graphic file (type jpg)
 
 <use ./HardwareManual/BatteryIndication.jpg>
 Package pdftex.def Info: ./HardwareManual/BatteryIndication.jpg used on input l
-ine 174.
+ine 173.
 (pdftex.def)             Requested size: 390.0pt x 390.03894pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 171--177
+Underfull \hbox (badness 10000) in paragraph at lines 170--176
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 179--188
+Underfull \hbox (badness 10000) in paragraph at lines 178--187
 
  []
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png used on input line 188.
+Package pdftex.def Info: logo.png used on input line 187.
 (pdftex.def)             Requested size: 123.46092pt x 131.49092pt.
 File: logo.png Graphic file (type png)
  <use logo.png>
-Package pdftex.def Info: logo.png used on input line 188.
+Package pdftex.def Info: logo.png used on input line 187.
 (pdftex.def)             Requested size: 28.45274pt x 30.30254pt.
  [5 <./HardwareManual/BatteryIndication.jpg>]
 Missing character: There is no â in font cmr12!
@@ -1174,10 +1164,10 @@ Missing character: There is no ™ in font cmr12!
 File: ./HardwareManual/WheelMotionIndication_L293D.jpg Graphic file (type jpg)
 <use ./HardwareManual/WheelMotionIndication_L293D.jpg>
 Package pdftex.def Info: ./HardwareManual/WheelMotionIndication_L293D.jpg used 
-on input line 216.
+on input line 215.
 (pdftex.def)             Requested size: 390.0pt x 390.03894pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 213--219
+Underfull \hbox (badness 10000) in paragraph at lines 212--218
 
  []
 
@@ -1188,76 +1178,73 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: ./HardwareManual/pwm.png Graphic file (type png)
 
 <use ./HardwareManual/pwm.png>
-Package pdftex.def Info: ./HardwareManual/pwm.png used on input line 223.
+Package pdftex.def Info: ./HardwareManual/pwm.png used on input line 222.
 (pdftex.def)             Requested size: 390.0pt x 323.49597pt.
 File: logo.png Graphic file (type png)
  <use logo.png>
-Package pdftex.def Info: logo.png used on input line 225.
+Package pdftex.def Info: logo.png used on input line 224.
 (pdftex.def)             Requested size: 123.46092pt x 131.49092pt.
 File: logo.png Graphic file (type png)
  <use logo.png>
-Package pdftex.def Info: logo.png used on input line 225.
+Package pdftex.def Info: logo.png used on input line 224.
 (pdftex.def)             Requested size: 28.45274pt x 30.30254pt.
  [6]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 226--227
+Underfull \hbox (badness 10000) in paragraph at lines 225--226
 
  []
 
 
-Underfull \hbox (badness 10000) in alignment at lines 231--247
+Underfull \hbox (badness 10000) in alignment at lines 230--246
 [][][]
  []
 
 
-Overfull \hbox (29.3747pt too wide) in paragraph at lines 231--248
+Overfull \hbox (29.3747pt too wide) in paragraph at lines 230--247
 [][] 
  []
 
 File: logo.png Graphic file (type png)
 <use logo.png>
+Package pdftex.def Info: logo.png used on input line 248.
+(pdftex.def)             Requested size: 123.46092pt x 131.49092pt.
+File: logo.png Graphic file (type png)
+ <use logo.png>
+Package pdftex.def Info: logo.png used on input line 248.
+(pdftex.def)             Requested size: 28.45274pt x 30.30254pt.
+ [7 <./HardwareManual/WheelMotionIndication_L293D.jpg>]
+File: logo.png Graphic file (type png)
+ <use logo.png>
 Package pdftex.def Info: logo.png used on input line 249.
 (pdftex.def)             Requested size: 123.46092pt x 131.49092pt.
 File: logo.png Graphic file (type png)
  <use logo.png>
 Package pdftex.def Info: logo.png used on input line 249.
 (pdftex.def)             Requested size: 28.45274pt x 30.30254pt.
- [7 <./HardwareManual/WheelMotionIndication_L293D.jpg>] <./HardwareManual/l293d
-.png, id=128, 1023.07219pt x 496.85625pt>
+ [8 <./HardwareManual/pwm.png>]
+<./HardwareManual/l293d.png, id=134, 1023.07219pt x 496.85625pt>
 File: ./HardwareManual/l293d.png Graphic file (type png)
 
 <use ./HardwareManual/l293d.png>
-Package pdftex.def Info: ./HardwareManual/l293d.png used on input line 254.
+Package pdftex.def Info: ./HardwareManual/l293d.png used on input line 253.
 (pdftex.def)             Requested size: 390.0pt x 189.39868pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 251--257
+Underfull \hbox (badness 10000) in paragraph at lines 250--256
 
  []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png used on input line 275.
-(pdftex.def)             Requested size: 123.46092pt x 131.49092pt.
-File: logo.png Graphic file (type png)
- <use logo.png>
-Package pdftex.def Info: logo.png used on input line 275.
-(pdftex.def)             Requested size: 28.45274pt x 30.30254pt.
- [8 <./HardwareManual/pwm.png>]
 <./HardwareManual/40106_buffer.jpg, id=135, 120.45pt x 120.45pt>
 File: ./HardwareManual/40106_buffer.jpg Graphic file (type jpg)
 
 <use ./HardwareManual/40106_buffer.jpg>
 Package pdftex.def Info: ./HardwareManual/40106_buffer.jpg used on input line 2
-80.
+79.
 (pdftex.def)             Requested size: 390.0pt x 390.03894pt.
 
 
@@ -1268,24 +1255,41 @@ File: ./HardwareManual/Position_encoders.jpg Graphic file (type jpg)
 
 <use ./HardwareManual/Position_encoders.jpg>
 Package pdftex.def Info: ./HardwareManual/Position_encoders.jpg used on input l
-ine 286.
+ine 285.
 (pdftex.def)             Requested size: 390.0pt x 390.03894pt.
+File: logo.png Graphic file (type png)
+ <use logo.png>
+Package pdftex.def Info: logo.png used on input line 287.
+(pdftex.def)             Requested size: 123.46092pt x 131.49092pt.
+File: logo.png Graphic file (type png)
+ <use logo.png>
+Package pdftex.def Info: logo.png used on input line 287.
+(pdftex.def)             Requested size: 28.45274pt x 30.30254pt.
 
+[9 <./HardwareManual/l293d.png>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./HardwareManual/motor_encoder.png, id=137, 806.26219pt x 204.01219pt>
+<./HardwareManual/motor_encoder.png, id=143, 806.26219pt x 204.01219pt>
 File: ./HardwareManual/motor_encoder.png Graphic file (type png)
 
 <use ./HardwareManual/motor_encoder.png>
 Package pdftex.def Info: ./HardwareManual/motor_encoder.png used on input line 
-292.
+291.
 (pdftex.def)             Requested size: 390.0pt x 98.6843pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png used on input line 294.
+(pdftex.def)             Requested size: 123.46092pt x 131.49092pt.
+File: logo.png Graphic file (type png)
+ <use logo.png>
+Package pdftex.def Info: logo.png used on input line 294.
+(pdftex.def)             Requested size: 28.45274pt x 30.30254pt.
+ [10 <./HardwareManual/40106_buffer.jpg>]
 Overfull \hbox (97.36171pt too wide) in paragraph at lines 295--297
 []$ 
  []
@@ -1303,14 +1307,15 @@ File: logo.png Graphic file (type png)
  <use logo.png>
 Package pdftex.def Info: logo.png used on input line 309.
 (pdftex.def)             Requested size: 28.45274pt x 30.30254pt.
- [9 <./HardwareManual/l293d.png>]
-<./HardwareManual/IR_Sensor.jpg, id=145, 120.45pt x 120.45pt>
+ [11 <./HardwareManual/Position_encoders.jpg> <./HardwareManual/motor_encoder.p
+ng>]
+<./HardwareManual/IR_Sensor.jpg, id=159, 120.45pt x 120.45pt>
 File: ./HardwareManual/IR_Sensor.jpg Graphic file (type jpg)
 
 <use ./HardwareManual/IR_Sensor.jpg>
 Package pdftex.def Info: ./HardwareManual/IR_Sensor.jpg used on input line 314.
 
-(pdftex.def)             Requested size: 390.0pt x 390.03894pt.
+(pdftex.def)             Requested size: 301.1261pt x 301.15547pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 311--317
 
@@ -1324,21 +1329,8 @@ File: logo.png Graphic file (type png)
  <use logo.png>
 Package pdftex.def Info: logo.png used on input line 317.
 (pdftex.def)             Requested size: 28.45274pt x 30.30254pt.
- [10 <./HardwareManual/40106_buffer.jpg>]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png used on input line 318.
-(pdftex.def)             Requested size: 123.46092pt x 131.49092pt.
-File: logo.png Graphic file (type png)
- <use logo.png>
-Package pdftex.def Info: logo.png used on input line 318.
-(pdftex.def)             Requested size: 28.45274pt x 30.30254pt.
- [11 <./HardwareManual/Position_encoders.jpg> <./HardwareManual/motor_encoder.p
-ng>]
-<./HardwareManual/lcd1.jpg, id=160, 120.45pt x 120.45pt>
+ [12 <./HardwareManual/IR_Sensor.jpg>]
+<./HardwareManual/lcd1.jpg, id=167, 120.45pt x 120.45pt>
 File: ./HardwareManual/lcd1.jpg Graphic file (type jpg)
 
 <use ./HardwareManual/lcd1.jpg>
@@ -1349,9 +1341,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 320--326
 
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 File: logo.png Graphic file (type png)
 <use logo.png>
 Package pdftex.def Info: logo.png used on input line 336.
@@ -1360,8 +1349,8 @@ File: logo.png Graphic file (type png)
  <use logo.png>
 Package pdftex.def Info: logo.png used on input line 336.
 (pdftex.def)             Requested size: 28.45274pt x 30.30254pt.
- [12 <./HardwareManual/IR_Sensor.jpg>]
-<./HardwareManual/lcd.png, id=168, 533.74406pt x 372.64218pt>
+ [13 <./HardwareManual/lcd1.jpg>]
+<./HardwareManual/lcd.png, id=174, 533.74406pt x 372.64218pt>
 File: ./HardwareManual/lcd.png Graphic file (type png)
 
 <use ./HardwareManual/lcd.png>
@@ -1372,9 +1361,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 338--344
 
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 File: logo.png Graphic file (type png)
 <use logo.png>
 Package pdftex.def Info: logo.png used on input line 366.
@@ -1383,8 +1369,8 @@ File: logo.png Graphic file (type png)
  <use logo.png>
 Package pdftex.def Info: logo.png used on input line 366.
 (pdftex.def)             Requested size: 28.45274pt x 30.30254pt.
- [13 <./HardwareManual/lcd1.jpg>]
-<./HardwareManual/lcd_timing_diagram.png, id=175, 644.4075pt x 233.37187pt>
+ [14 <./HardwareManual/lcd.png>]
+<./HardwareManual/lcd_timing_diagram.png, id=181, 644.4075pt x 233.37187pt>
 File: ./HardwareManual/lcd_timing_diagram.png Graphic file (type png)
 
 <use ./HardwareManual/lcd_timing_diagram.png>
@@ -1404,8 +1390,8 @@ File: logo.png Graphic file (type png)
  <use logo.png>
 Package pdftex.def Info: logo.png used on input line 374.
 (pdftex.def)             Requested size: 28.45274pt x 30.30254pt.
- [14 <./HardwareManual/lcd.png>]
-<./HardwareManual/lcd_connection.png, id=182, 425.33907pt x 202.50656pt>
+ [15 <./HardwareManual/lcd_timing_diagram.png>]
+<./HardwareManual/lcd_connection.png, id=188, 425.33907pt x 202.50656pt>
 File: ./HardwareManual/lcd_connection.png Graphic file (type png)
 
 <use ./HardwareManual/lcd_connection.png>
@@ -1419,15 +1405,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 380--386
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png used on input line 392.
+Package pdftex.def Info: logo.png used on input line 386.
 (pdftex.def)             Requested size: 123.46092pt x 131.49092pt.
 File: logo.png Graphic file (type png)
  <use logo.png>
-Package pdftex.def Info: logo.png used on input line 392.
+Package pdftex.def Info: logo.png used on input line 386.
 (pdftex.def)             Requested size: 28.45274pt x 30.30254pt.
- [15 <./HardwareManual/lcd_timing_diagram.png> <./HardwareManual/lcd_connection
-.png>]
-<./HardwareManual/battery_voltage_sensor.png, id=190, 406.51875pt x 405.01312pt
+ [16 <./HardwareManual/lcd_connection.png>]
+<./HardwareManual/battery_voltage_sensor.png, id=195, 406.51875pt x 405.01312pt
 >
 File: ./HardwareManual/battery_voltage_sensor.png Graphic file (type png)
  <use ./HardwareManual/battery_voltage_sensor.png>
@@ -1439,7 +1424,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 394--400
 
  []
 
-<./HardwareManual/ISP_programmer.png, id=191, 887.56593pt x 877.77937pt>
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png used on input line 400.
+(pdftex.def)             Requested size: 123.46092pt x 131.49092pt.
+File: logo.png Graphic file (type png)
+ <use logo.png>
+Package pdftex.def Info: logo.png used on input line 400.
+(pdftex.def)             Requested size: 28.45274pt x 30.30254pt.
+ [17 <./HardwareManual/battery_voltage_sensor.png>] <./HardwareManual/ISP_progr
+ammer.png, id=202, 887.56593pt x 877.77937pt>
 File: ./HardwareManual/ISP_programmer.png Graphic file (type png)
 
 <use ./HardwareManual/ISP_programmer.png>
@@ -1451,134 +1445,98 @@ Underfull \hbox (badness 10000) in paragraph at lines 403--409
 
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png used on input line 413.
+Package pdftex.def Info: logo.png used on input line 414.
 (pdftex.def)             Requested size: 123.46092pt x 131.49092pt.
 File: logo.png Graphic file (type png)
  <use logo.png>
-Package pdftex.def Info: logo.png used on input line 413.
+Package pdftex.def Info: logo.png used on input line 414.
 (pdftex.def)             Requested size: 28.45274pt x 30.30254pt.
- [16 <./HardwareManual/battery_voltage_sensor.png>] <./HardwareManual/capture.p
-ng, id=198, 918.43124pt x 429.10312pt>
+ [18 <./HardwareManual/ISP_programmer.png>]
+<./HardwareManual/capture.png, id=210, 918.43124pt x 429.10312pt>
 File: ./HardwareManual/capture.png Graphic file (type png)
 
 <use ./HardwareManual/capture.png>
 Package pdftex.def Info: ./HardwareManual/capture.png used on input line 421.
 (pdftex.def)             Requested size: 390.0pt x 182.21254pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<./HardwareManual/capture1.png, id=199, 974.13937pt x 422.32782pt>
+<./HardwareManual/capture1.png, id=211, 974.13937pt x 422.32782pt>
 File: ./HardwareManual/capture1.png Graphic file (type png)
 
 <use ./HardwareManual/capture1.png>
 Package pdftex.def Info: ./HardwareManual/capture1.png used on input line 428.
 (pdftex.def)             Requested size: 390.0pt x 169.07634pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in alignment at lines 431--457
+Underfull \hbox (badness 10000) in alignment at lines 431--515
 [][][]
  []
 
 
-Overfull \hbox (29.3747pt too wide) in paragraph at lines 431--458
+Overfull \hbox (29.3747pt too wide) in paragraph at lines 431--516
 [][] 
  []
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png used on input line 459.
+Package pdftex.def Info: logo.png used on input line 517.
 (pdftex.def)             Requested size: 123.46092pt x 131.49092pt.
 File: logo.png Graphic file (type png)
  <use logo.png>
-Package pdftex.def Info: logo.png used on input line 459.
+Package pdftex.def Info: logo.png used on input line 517.
 (pdftex.def)             Requested size: 28.45274pt x 30.30254pt.
- [17 <./HardwareManual/ISP_programmer.png>]
+ [19 <./HardwareManual/capture.png> <./HardwareManual/capture1.png>]
+Overfull \vbox (13.29912pt too high) has occurred while \output is active []
+
 File: logo.png Graphic file (type png)
 
 <use logo.png>
-Package pdftex.def Info: logo.png used on input line 459.
+Package pdftex.def Info: logo.png used on input line 517.
 (pdftex.def)             Requested size: 123.46092pt x 131.49092pt.
 File: logo.png Graphic file (type png)
  <use logo.png>
-Package pdftex.def Info: logo.png used on input line 459.
+Package pdftex.def Info: logo.png used on input line 517.
 (pdftex.def)             Requested size: 28.45274pt x 30.30254pt.
- [18 <./HardwareManual/capture.png> <./HardwareManual/capture1.png>]
-Underfull \hbox (badness 10000) in alignment at lines 459--484
-[][][]
- []
-
-
-Overfull \hbox (29.3747pt too wide) in paragraph at lines 459--485
-[][] 
- []
-
-
-Underfull \hbox (badness 10000) in alignment at lines 486--511
-[][][]
- []
-
-
-Overfull \hbox (29.3747pt too wide) in paragraph at lines 486--512
-[][] 
- []
-
-
-Underfull \hbox (badness 10000) in alignment at lines 513--525
-[][][]
- []
-
-
-Overfull \hbox (29.3747pt too wide) in paragraph at lines 513--526
-[][] 
- []
-
+ [20]
 File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png used on input line 534.
+ <use logo.png>
+Package pdftex.def Info: logo.png used on input line 524.
 (pdftex.def)             Requested size: 123.46092pt x 131.49092pt.
 File: logo.png Graphic file (type png)
  <use logo.png>
-Package pdftex.def Info: logo.png used on input line 534.
+Package pdftex.def Info: logo.png used on input line 524.
 (pdftex.def)             Requested size: 28.45274pt x 30.30254pt.
- [19]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 534.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 534.
- (document.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 534.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 534.
+ [21]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 524.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 524.
+
+(document.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 524.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 524.
 Package rerunfilecheck Info: File `document.out' has not changed.
 (rerunfilecheck)             Checksum: 6DBD4A3C4C1E6EA955AB47ACACA2C156;111.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 534.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 524.
  ) 
 Here is how much of TeX's memory you used:
- 31495 strings out of 493333
- 632399 string characters out of 3141349
- 736950 words of memory out of 3000000
- 34508 multiletter control sequences out of 15000+200000
+ 31501 strings out of 493333
+ 632499 string characters out of 3141349
+ 740044 words of memory out of 3000000
+ 34512 multiletter control sequences out of 15000+200000
  538132 words of font info for 49 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 63i,16n,101p,10549b,797s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 63i,15n,101p,10549b,772s stack positions out of 5000i,500n,10000p,200000b,50000s
 <D:/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/Program
 s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><D:/Programs/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/Programs/MiKTeX 2.9/fonts/type1/
 public/amsfonts/cm/cmr12.pfb><D:/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
 s/cm/cmr17.pfb><D:/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pf
 b><D:/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on document.pdf (20 pages, 8313637 bytes).
+Output written on document.pdf (22 pages, 8300865 bytes).
 PDF statistics:
- 260 PDF objects out of 1000 (max. 8388607)
- 60 named destinations out of 1000 (max. 500000)
+ 271 PDF objects out of 1000 (max. 8388607)
+ 62 named destinations out of 1000 (max. 500000)
  273 words of extra memory for PDF output out of 10000 (max. 10000000)
 

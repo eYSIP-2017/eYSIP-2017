@@ -77,6 +77,12 @@ contents={\includegraphics{logo}}
 {\Large eYSIP2017\\[1cm]}
 {\Huge\scshape Distributed robotics, multi swarm robots \\[.1in]}
 \vfill
+\hfill\\
+\begin{figure}[h!]
+	\caption{A picture of the swarm robots!}
+	\includegraphics[width=\textwidth]{./Small_bots.jpg}		
+\end{figure}	
+\hfill\\
 \begin{flushright}
 {\large Intern 1 Mr. Chinmay C \\}
 {\large Intern 2 Mr. R Hariharan \\}
@@ -91,7 +97,7 @@ contents={\includegraphics{logo}}
 
 \chapter[Project Tag]{Project Name}
 \section*{Abstract}
-Swarm robotics is an approach to the coordination of multirobot systems which consist of large numbers of mostly simple physical robots. It is supposed that a desired collective behavior emerges from the interactions between the robots and interactions of robots with the environment. This approach emerged on the field of artificial swarm intelligence, as well as the biological studies of insects, ants and other fields in nature, where swarm behaviour occurs.
+Swarm robotics is a field in robotics which implements coordination of multi robot systems which consist of large number of robots having simpler robots. There is a collective behavior that emerges from interactions between robots and interactions of robots with the environment. This behavior is emerged from field of biological studies of fishes, birds, ants, insects, etc. Application of swarm robotics varies from military, aviation to collective behavior of self driving cars. The objective of the project was to build miniaturized swarm bots and develop an algorithm for generic shape formation.
 
 \subsection*{Following points are completed:}
 \begin{itemize}
@@ -99,14 +105,14 @@ Swarm robotics is an approach to the coordination of multirobot systems which co
 with different robots available \\
 \item Study the kinematics of differential drive configuration \\
 \item Selecting appropriate sensors to be added \\
-\item Designing the pcbs \\
+\item Designing the PCB \\
 \item Assembling all the components \\
-\item Making of Minibots \\
-\item Testing of robots \\
-\item Solve rendezvous problem using homogenous controller
-gain \\
-\item Solve rendezvous problem using heterogenous controller
-gain \\
+\item Making of Mini bots \\
+\item Testing of Mini bots\\
+\item Implementing of circle formation of asynchronous fat robots with limited visibility in V-REP simulator\\
+\item Developed and implemented generic shape formation algorithm for a system of distributed robots in V-REP simulator\\
+\item Implemented follow the leader swarm behavior on Mini bots\\
+\item Implemented rendezvous swarm behavior on firebird V robots\\
 \end{itemize}
 
 \section{Hardware parts}
@@ -134,6 +140,8 @@ gain \\
   \item Installation steps \href{https://git-scm.com/}{download link},
 \end{itemize}
 
+\newpage
+
 \section{Assembly of hardware}
 Circuit diagram and Steps of assembly of hardware with pictures for each step
 
@@ -142,39 +150,39 @@ Circuit diagram and Steps of assembly of hardware with pictures for each step
 Circuit schematic, simplified circuit diagram , block diagram of system
 \hfill\\
 \begin{figure}[h!]
-	\caption{A picture of the swarm robots!}
+	\caption{Back part of pcb}
 	\includegraphics[width=\textwidth]{./Pictures/PCB_back}		
 \end{figure}	
 \hfill\\
 \subsection*{Step 1}
-Designing schematics of PCB and routing layout of PCB and getting them printed.
+Designing schematics and routing layout of PCB and getting them printed.
 \hfill\\
 \begin{figure}[h!]
-	\caption{A picture of the swarm robots!}
+	\caption{Front part of pcb}
 	\includegraphics[width=\textwidth]{./Pictures/PCB_front}		
 \end{figure}	
 \hfill\\
+\newpage
 \subsection*{Step 2}
-Designing chassis on 
+Designing chassis and getting them laser cut. Fixing motors with L-clamps 
 \hfill\\
 \begin{figure}[h!]
-	\caption{A picture of the swarm robots!}
-	\includegraphics[width=\textwidth]{./Pictures/Chassis_Design}		
+	\caption{Chassi design}
+	\includegraphics[width=350px]{./Pictures/Chassis_Design}		
 \end{figure}	
 \hfill\\
+\newpage        
 \subsection*{Step 3}
-Steps for assembling part 3
+Soldering PCBs and attaching PCB on top of chassi.
 \hfill\\
 \begin{figure}[h!]
-	\caption{A picture of the swarm robots!}
+	\caption{Complete robot.}
 	\includegraphics[width=\textwidth]{./Pictures/version2_top}		
 \end{figure}	
 \hfill\\
-
+\newpage
 \section{Software and Code}
 \href{https://github.com/eYSIP-2017/eYSIP-2017_DistributedRobotics.git}{Github link} for the repository of code
-
-Brief explanation of various parts of code 
 
 \section{Use and Demo}
 Final Setup Image
@@ -192,6 +200,13 @@ What can be done to take this work ahead in future as projects.
 \hfill\\
 Bugs (fixed)
 Pin 3 of both encoders was supposed to be shorted to ground and connection to buffer connected to led was supposed to be shorted to pin 4. The bug is fixed by shorting pin 3 to ground externally.
+
+Challenges faced:
+
+Placing components and routing air wires of PCB.\\
+
+Reducing overall size of the PCB.\\
+
 Any failure or challenges faced during project
 
 \begin{thebibliography}{li}

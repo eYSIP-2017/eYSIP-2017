@@ -121,19 +121,18 @@
 	\hfill\\
 	\begin{figure}[h!]
 		\caption{A picture of the swarm robots!}
-		\includegraphics[width=\textwidth]{./HardwareManual/Small_bots.jpg}		
+		\includegraphics[width=300px]{./HardwareManual/Small_bots.jpg}		
 	\end{figure}	
 	\hfill\\
-
+	\newpage
 	\underline{\textbf{\Large{Mini Bots Block Diagram:}}}
-	\hfill\\
+	
 	\begin{figure}[h!]
 		\caption{Block diagram of hardware}
-		\includegraphics[width=\textwidth]{./Block_Diagram.jpg}
+		\includegraphics[width=300px]{./Block_Diagram.jpg}
 	\end{figure}
-		
+	\newpage
 	\hfill\\
-	
 	\underline{\textbf{\Large{Mini bots technical specification}}}
 	\begin{enumerate}
 		\item{\textbf{\large{Microcontroller:}}\\ATMEL ATMEGA16}
@@ -151,7 +150,7 @@
 			Height: 7cm\\} 
 		\item{\textbf{\large{Power:}}\\6 AA size NiMH rechargeable batteries} 
 	\end{enumerate}
-
+	\newpage
 	\hfill\\	
 	\underline{\textbf{\Large{Top view of PCB}}}
 	\begin{figure}[h!]
@@ -162,7 +161,7 @@
 	
 	\underline{\textbf{\Large{Powering up Mini bots}}}
 	\begin{itemize}
-		\item{Mini bots is powered by six AA sized NiMH rechargeable batteries. 2.1Ah battery gives about
+		\item{Mini bots are powered by six AA sized NiMH rechargeable batteries. 2.1Ah battery gives about
 			two hour battery operation. Battery is available as preassembled 6 cell pack or robot has AA
 			sized 6 cell battery holder.}
 		\item{Before connecting the battery pack or inserting batteries in the socket, make sure that 	battery connection jumper of the robot is not put. You need to charge the battery before first use. Use any AC adaptor / SMPS	which can give accurate 12V DC and 1Amp current.}
@@ -176,9 +175,9 @@
 	\hfill\\	
 	
 	\begin{itemize}
-	\item {Mini bots is powered by 6 NiMH rechargeable batteries of 0.8Ah and above capacity. When it is
+	\item {Mini bots are powered by 6 NiMH rechargeable batteries of 0.8Ah and above capacity. When it is
 	fully discharged voltage drops to about 7V. Battery pack should not be discharged below 6V (1V
-	per cell) to extend the battery life. Mini bots has onboard smart battery detector which monitors
+	per cell) to extend the battery life. Mini bots have onboard smart battery detector which monitors
 	battery status. Nickel Metal Hydride batteries must be recharged externally.\\
 	Power management block on the Mini bots performs following functions.\\
 	1. Battery low warning in case battery is below critical level\\
@@ -200,7 +199,7 @@
 	
 	\underline{\textbf{\Large{Motion control}}}
 	\begin{itemize}
-	\item {Mini bots robot has two 60 RPM DC geared motors in differential drive configuration. Robot has top speed of about 66cm per second. Using this
+	\item {Mini bots has two 60 RPM DC geared motors in differential drive configuration. Robot has top speed of about 66cm per second. Using this
 		configuration, the robot can turn with zero turning radius by rotating one wheel in clockwise
 		direction and other in counterclockwise direction.\\
 		Motion control involves direction control and velocity control. Motors are controlled by L293D
@@ -247,7 +246,7 @@
 	\end{tabular*}
 
 	\end{itemize}
-
+	\newpage
 	\hfill\\
 	\begin{figure}[h!]
 		\caption{Motor driver schematics}
@@ -292,12 +291,13 @@
 		\includegraphics[width=\textwidth]{./HardwareManual/motor_encoder.png}
 	\end{figure}
 
+\newpage
 \hfill\\
 \underline{\textbf{\Large{Infrared proximity and Directional light intensity sensors}}}
 \begin{itemize}
 	\item {
 		Infrared proximity sensors are used to detect proximity of any obstacles in the short range. IR
-		proximity sensors have about 10cm sensing range. Mini bots robot has 8 IR proximity sensors.\\
+		proximity sensors have about 10cm sensing range. Mini bots has 8 IR proximity sensors.\\
 		In the absence of the obstacle there is no reflected light hence no leakage current will flow
 		through the photo transistor and output voltage of the photodiode will be around 5V. As obstacle
 		comes closer, more light gets reflected and falls on the photo diode and leakage current flowing
@@ -311,10 +311,10 @@
 	\hfill\\
 	\begin{figure}[h!]
 		\caption{IR sensors}
-		\includegraphics[width=\textwidth]{./HardwareManual/IR_Sensor.jpg}
+		\includegraphics[width=300px]{./HardwareManual/IR_Sensor.jpg}
 	\end{figure}	
 	\hfill\\
-	
+	\newpage
 	\underline{\textbf{\Large{LCD}}}
 		
 	\hfill\\
@@ -337,7 +337,7 @@
 
 	\hfill\\
 	\begin{figure}[h!]
-		\caption{Block diagram of atmega16 and lcd connection}
+		\caption{Block diagram of lcd connection to atmega16}
 		\includegraphics[width=\textwidth]{./HardwareManual/lcd.png}
 	\end{figure}	
 	\hfill\\
@@ -371,7 +371,7 @@
 		\includegraphics[width=\textwidth]{./HardwareManual/lcd_timing_diagram.png}
 	\end{figure}	
 	\hfill\\
-	
+	\newpage
 	\underline{\textbf{\Large{LCD contrast and backlight setting}}}
 	\begin{itemize}
 	\item{Contrast of the LCD can be adjusted by adjusting the potentiometer. To save power its backlight can also be turned off by removing jumper.}
@@ -383,7 +383,7 @@
 		\includegraphics[width=\textwidth]{./HardwareManual/lcd_connection.png}
 	\end{figure}	
 	\hfill\\
-	
+	\newpage
 	\underline{\textbf{\Large{Battery voltage sensor}}}
 	\begin{itemize}
 		\item{Two registers of 22K ohms are used to scale down the battery voltage below 5V and given to the
@@ -397,7 +397,7 @@
 		\includegraphics[width=\textwidth]{./HardwareManual/battery_voltage_sensor.png}
 	\end{figure}	
 	\hfill\\
-	
+	\newpage
 	\underline{\textbf{\Large{Atmega 16 programmer}}}
 	
 	\hfill\\
@@ -408,10 +408,10 @@
 	\hfill\\
 	
 	\begin{itemize}
-	\item{Mini bots has ATMEGA16 microcontroller running at 16MHz. Robot is programmed by ISP (In System Programming) using AVR USB programmer from NEX
+	\item{Mini bots have ATMEGA16 microcontroller running at 16MHz. Robot is programmed by ISP (In System Programming) using AVR USB programmer from NEX
 		Robotics or ATMEL’s AVR ISP mkII.}
 	\end{itemize}
-
+	\newpage
 	\hfill\\
 	\underline{\textbf{\Large{Schematics}}}
 	\begin{itemize}
@@ -420,13 +420,14 @@
 		\caption{Complete schematics of pcb}
 		\includegraphics[width=\textwidth]{./HardwareManual/capture.png}
 	\end{figure}	
-
+	
 	\underline{\textbf{\Large{Layout}}}
 
 	\begin{figure}[h!]
 		\caption{Complete layout of pcb}
 		\includegraphics[width=\textwidth]{./HardwareManual/capture1.png}
 	\end{figure}		
+
 
 \begin{tabular*}{\textwidth}{|l|c|c|}
 	\hline
@@ -454,9 +455,6 @@
 	\hline
 	11 & GND & Ground \\
 	\hline
-\end{tabular*}	
-
-\begin{tabular*}{\textwidth}{|l|c|c|}
 	12 & XTAL1 & Crystal 16 MHz \\
 	\hline
 	13 & XTAL2 & Crystal 16 MHz \\
@@ -481,9 +479,6 @@
 	\hline
 	23 & PC1(SDA) & LCD control line RW(Read/Write Select) \\
 	\hline
-\end{tabular*}	
-
-\begin{tabular*}{\textwidth}{|l|c|c|}
 	24 & PC2(TCK) & LCD control line EN(Enable Signal) \\
 	\hline
 	25 & PC3(TMS) & LCD data lines (4-bit mode) \\
@@ -508,9 +503,6 @@
 	\hline
 	35 & PA5(ADC5) & ADC input for analog IR proximity sensor\\
 	\hline
-\end{tabular*}	
-
-\begin{tabular*}{\textwidth}{|l|c|c|}
 	36 & PA4(ADC4) & ADC input for analog IR proximity sensor\\
 	\hline
 	37 & PA3(ADC3) & ADC input for analog IR proximity sensor\\
@@ -521,10 +513,9 @@
 	\hline
 	40 & PA0(ADC0) & ADC input for analog IR proximity sensor\\
 	\hline
-	
 \end{tabular*}
 
-	\end{itemize}
+\end{itemize}
 
 \section{Software and Code}
 \href{https://github.com/eYSIP-2017/eYSIP-2017_DistributedRobotics.git}{Github link} for the repository of code
