@@ -7,7 +7,7 @@ You can see https://github.com/eYSIP-2017/eYSIP-2017_DistributedRobotics/tree/ma
 
 For more information on V-REP visit : http://www.coppeliarobotics.com/resources.html
 
-##_______Structue of the Repository_______
+##Structue of the Repository
 It contains three folders
 1) Code
 	This contains the Child scripts which has been used for the simulation
