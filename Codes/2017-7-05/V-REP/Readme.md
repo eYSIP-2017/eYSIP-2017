@@ -1,5 +1,7 @@
 The V-REP folder Contains Code, Model and Scene for __Generic Shape Formation Algorithm__
 
+This contains version 1 and version 2, where version 1 has no implementation of robot avoidance algorithm and no tie breaking algorithm. Whereas version 2 contains the has a crude implementation of both robot avoidance algorithm and tie breaking algorithm. 
+
 Refrence for the algorithm used: https://github.com/eYSIP-2017/eYSIP-2017_DistributedRobotics/tree/master/Documents/Manuals/Generic_Shape_Algo.pdf
 
 We used V-REP simulator (EDU licence) to see the working of our algorithms.
