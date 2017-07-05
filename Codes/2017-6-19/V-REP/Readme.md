@@ -7,7 +7,7 @@ You can see https://github.com/eYSIP-2017/eYSIP-2017_DistributedRobotics/tree/ma
 
 For more information on V-REP visit : http://www.coppeliarobotics.com/resources.html
 
-___Structue of the Repository__
+__Structue of the Repository__
 
 It contains three folders
 1) Code
