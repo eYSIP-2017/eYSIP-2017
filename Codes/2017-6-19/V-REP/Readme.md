@@ -10,9 +10,6 @@ For more information on V-REP visit : http://www.coppeliarobotics.com/resources.
 __Structue of the Repository__
 
 It contains three folders
-1) Code
-	This contains the Child scripts which has been used for the simulation
-2) Model
-	The model that was used/built in the simulation
-3) Scene
-	The scene contains all the components i.e. the code and the model. You can just use the scene and visualise what is happing.
+1) Code : This contains the Child scripts which has been used for the simulation
+2) Model: The model that was used/built in the simulation
+3) Scene: The scene contains all the components i.e. the code and the model. You can just use the scene and visualise what is happing.
