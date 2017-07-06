@@ -43,7 +43,7 @@ title=\textbf{\Large{#1}}}
 
 %use of package marginnote for notes in margin
 \usepackage{marginnote}
-
+\usepackage{tabularx}
 %use of packgage watermark for pages
 %\usepackage{draftwatermark}
 %\SetWatermarkText{\includegraphics{logo}}
@@ -75,12 +75,12 @@ contents={\includegraphics{logo}}
 \begin{titlepage}
 \raggedright
 {\Large eYSIP2017\\[1cm]}
-{\Huge\scshape Distributed robotics, multi swarm robots \\[.1in]}
+{\Huge\scshape\centering Distributed robotics - multi swarm robots \\[.1in]}
 \vfill
 \hfill\\
 \begin{figure}[h!]
+	\centering\includegraphics[width=350px]{./Small_bots.jpg}		
 	\caption{A picture of the swarm robots!}
-	\includegraphics[width=\textwidth]{./Small_bots.jpg}		
 \end{figure}	
 \hfill\\
 \begin{flushright}
@@ -95,8 +95,10 @@ contents={\includegraphics{logo}}
 \end{titlepage}
 %-------------------------------------------------------------------------------
 
-\chapter[Project Tag]{Project Name}
-\section*{Abstract}
+\tableofcontents
+
+\chapter[Distributed robotics - multi swarm robots]{Distributed robotics - multi swarm robots}
+\section{Abstract}
 Swarm robotics is a field in robotics which implements coordination of multi robot systems which consist of large number of robots having simpler robots. There is a collective behavior that emerges from interactions between robots and interactions of robots with the environment. This behavior is emerged from field of biological studies of fishes, birds, ants, insects, etc. Application of swarm robotics varies from military, aviation to collective behavior of self driving cars. The objective of the project was to build miniaturized swarm bots and develop an algorithm for generic shape formation.
 
 \subsection*{Following points are completed:}
@@ -115,7 +117,7 @@ with different robots available \\
 \item Implemented rendezvous swarm behavior on firebird V robots\\
 \end{itemize}
 
-\section{Hardware parts}
+\chapter[Hardware parts]{Hardware parts}
 \begin{itemize}
   \item List of hardware: \href{./COMPONENT LIST}{COMPONENT LIST},
   \item Detail of each hardware: Atmega16 \href{./datasheet/atmega16.pdf}{Datasheet}, {Chip component, Lamington road, Mumbai}, 
@@ -124,8 +126,13 @@ with different robots available \\
   \item Detail of each hardware: LM158 \href{./datasheet/lm158-n.pdf}{Datasheet}, {Chip component, Lamington road, Mumbai}, 
   \item Connection diagram
 \end{itemize}
-
-\section{Software used}
+\begin{tabular}{p{0.25\linewidth} p{0.25\linewidth} p{0.25\linewidth} p{0.25\linewidth}}
+	\begin{figure}
+		\includegraphics[width=10px]{./l293d.jpeg}		
+		\caption{l293d}
+	\end{figure} & sdhljkfhs & jsdhfkjsld & jshldfhsdf\\
+\end{tabular}
+\chapter[Softwares used]{Softwares used}
 \begin{itemize}
   \item List of softwares used are V-rep, Fusion 360, AvrDude, Avrgcc, Texstudio, Git 
   \item Details of software: V-rep: 3.4.0, \href{http://www.coppeliarobotics.com/}{download link}, 
@@ -142,11 +149,11 @@ with different robots available \\
 
 \newpage
 
-\section{Assembly of hardware}
+\chapter{Assembly of hardware}
 Circuit diagram and Steps of assembly of hardware with pictures for each step
 
 
-\subsection*{Circuit Diagram}
+\section{Circuit Diagram}
 Circuit schematic, simplified circuit diagram , block diagram of system
 \hfill\\
 \begin{figure}[h!]
@@ -200,8 +207,9 @@ Solve collision of homogeneous dynamic swarm robots.\\
 \hfill\\
 	\includegraphics[width=\textwidth]{./Capture2.png}
 \hfill\\
-Bugs (fixed)
-Pin 3 of both encoders was supposed to be shorted to ground and connection to buffer connected to led was supposed to be shorted to pin 4. The bug is fixed by shorting pin 3 to ground externally.\\
+
+Bugs: Pin 3 of both encoders was supposed to be shorted to ground and connection to buffer connected to led was supposed to be shorted to pin 4.\\
+Fix: The bug is fixed by shorting pin 3 to ground externally.\\
 
 Challenges faced:\\
 Placing components and routing air wires of PCB.\\
