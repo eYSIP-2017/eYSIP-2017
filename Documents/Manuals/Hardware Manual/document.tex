@@ -75,11 +75,10 @@
 \begin{titlepage}
 	\raggedright
 	{\Large eYSIP2017\\[1cm]}
-	{\Huge\scshape Distributed robotics, multi swarm robots \\[.1in]}
+	{\Huge\scshape\centering Distributed robotics - multi swarm robots \\[.1in]}
 	\vfill
 		\hfill\\
 	\begin{figure}[h!]
-		\caption{A picture of the swarm robots!}
 		\includegraphics[width=\textwidth]{./HardwareManual/Small_bots.jpg}		
 	\end{figure}	
 	\hfill\\
@@ -93,49 +92,54 @@
 	
 	{\itshape 2017, e-Yantra Publication}
 \end{titlepage}
-%-------------------------------------------------------------------------------
-
-\chapter[Project Tag]{Distributed robotics, multi swarm robots}
-
-\begin{tabbing}
-	\hspace{4cm}
-	\underline{\LARGE{Mini bots hardware manual}} % Print the main header
-\end{tabbing}
-%------------------------------------------------
 	
-	\hfill % Horizontal space between the two blocks
-	
-	\underline{\textbf{\Large{Contents}}}
+\tableofcontents
+
+	\chapter{Introduction}
+	Thanks for choosing the Mini bots mobile robot platform. Mini bots will give you good
+	exposure to the world of swarm robotics and embedded systems. Thanks to its innovative architecture
+	and adoption of the ‘Open Source Philosophy’ in its software and hardware design, you will be
+	able to create and contribute to complex applications that run on this platform, helping you
+	acquire expertise as you spend more time with them.\\
+	\textbf{Safety precautions:}
 	\begin{enumerate}
-		\item{\textbf{\large{Mini bots technical specification}}}				\item{\textbf{\large{Powering up Mini bots}}}
-		\item{\textbf{\large{Battery maintaince}}}
-		\item{\textbf{\large{Motion control}}}
-		\item{\textbf{\large{Position encoders}}}
-		\item{\textbf{\large{Infrared proximity and directional light intensity sensors}}}
-		\item{\textbf{\large{LCD}}}
-		\item{\textbf{\large{LCD contrast and backlight setting}}}
-		\item{\textbf{\large{Battery voltage sensor}}}
-		\item{\textbf{\large{Atmega16}}}
-	\end{enumerate}
-
-	\hfill\\
-	\begin{figure}[h!]
-		\caption{A picture of the swarm robots!}
-		\includegraphics[width=300px]{./HardwareManual/Small_bots.jpg}		
-	\end{figure}	
-	\hfill\\
-	\newpage
-	\underline{\textbf{\Large{Mini Bots Block Diagram:}}}
+	\item Robot’s electronics is static sensitive. Use robot in static free environment.
+	\item If robot’s battery low buzzer starts beeping, immediately charge the batteries.
+	\item To prevent fire hazard, do not expose the equipment to rain or moisture.
+	\item Refrain from dismantling the unit or any of its accessories once robot is assembled.
+	\item Never allow NiMH battery to deep discharge.
+	\item Mount all the components with correct polarity.
+	\item Keep wheels away from long hair or fur.
+	\item Keep the robot away from the wet areas. Contact with water will damage the robot.
+	\item To avoid risks of fall, keep your robot in a stable position.
+	\item Do not attach any connectors while robot is powered ON.
+	\item Never leave the robot powered ON when it is not in use.
+\end{enumerate}
+\textbf{Inappropriate Operation:}\\
+Inappropriate operation can damage your robot. Inappropriate operation includes, but is not
+limited to:
+	\begin{enumerate}		
+	\item Dropping the robot, running it off an edge, or otherwise operating it in an irresponsible
+	manner.
+	\item Interfacing new hardware without considering compatibility
+	\item Overloading the robot above its payload capacity.
+	\item Exposing the robot to wet environments.
+	\item Continuing to run the robot after hair, yarn, string, or any other item has become
+	entangled in the robot’s axles or wheels.
+	\item All other forms of inappropriate operation.
+	\item Using robot in areas prone to static electricity.
+\end{enumerate}
+	
+	\chapter{Mini Bots Block Diagram}
 	
 	\begin{figure}[h!]
 		\caption{Block diagram of hardware}
 		\includegraphics[width=300px]{./Block_Diagram.jpg}
 	\end{figure}
-	\newpage
 	\hfill\\
-	\underline{\textbf{\Large{Mini bots technical specification}}}
+	\chapter{Mini bots technical specification}
 	\begin{enumerate}
-		\item{\textbf{\large{Microcontroller:}}\\ATMEL ATMEGA16}
+		\item{\textbf{\large{Microcontroller:}}\\ATMEL ATMEGA16}\
 		\item{\textbf{\large{Sensors:}}\\Eight IR proximity sensors\\Two Position Encoders\\Battery voltage sensing}
 		\item{\textbf{\large{Indicators:}}\\2 x 16 Characters LCD\\
 			Indicator LEDs\\
@@ -150,7 +154,6 @@
 			Height: 7cm\\} 
 		\item{\textbf{\large{Power:}}\\6 AA size NiMH rechargeable batteries} 
 	\end{enumerate}
-	\newpage
 	\hfill\\	
 	\underline{\textbf{\Large{Top view of PCB}}}
 	\begin{figure}[h!]
@@ -159,7 +162,7 @@
 	\end{figure}
 	\hfill\\
 	
-	\underline{\textbf{\Large{Powering up Mini bots}}}
+	\chapter{Powering up Mini bots}
 	\begin{itemize}
 		\item{Mini bots are powered by six AA sized NiMH rechargeable batteries. 2.1Ah battery gives about
 			two hour battery operation. Battery is available as preassembled 6 cell pack or robot has AA
@@ -186,6 +189,8 @@
 	connected.\\}
 	\end{itemize}
 	\hfill\\	
+	
+	\chapter[Battery Maintenance]{Battery Maintenance}
 	\underline{\textbf{\Large{Battery Maintenance}}}
 	\begin{itemize}
 		\item {Fully charged NiMH battery will get completely discharged with in a week of storage. Always
@@ -197,7 +202,7 @@
 			Disconnect the battery connector if robot is to be stored for long duration of time.}
 	\end{itemize}
 	
-	\underline{\textbf{\Large{Motion control}}}
+	\chapter{Motion control}
 	\begin{itemize}
 	\item {Mini bots has two 60 RPM DC geared motors in differential drive configuration. Robot has top speed of about 66cm per second. Using this
 		configuration, the robot can turn with zero turning radius by rotating one wheel in clockwise
@@ -253,8 +258,7 @@
 		\includegraphics[width=\textwidth]{./HardwareManual/l293d.png}
 	\end{figure}
 	\hfill\\
-	
-	\underline{\textbf{\Large{Position encoders}}}
+	\chapter{Position encoders}
 	\begin{itemize}
 	\item {Position encoders give position / velocity feedback to the robot. It is used in closed loop to
 		control robot’s position and velocity. Position encoder consists of slotted disc which rotates
@@ -293,7 +297,7 @@
 
 \newpage
 \hfill\\
-\underline{\textbf{\Large{Infrared proximity and Directional light intensity sensors}}}
+\chapter{Infrared proximity and Directional light intensity sensors}
 \begin{itemize}
 	\item {
 		Infrared proximity sensors are used to detect proximity of any obstacles in the short range. IR
@@ -372,6 +376,8 @@
 	\end{figure}	
 	\hfill\\
 	\newpage
+	
+	\chapter[LCD contrast and backlight setting]{LCD contrast and backlight setting}
 	\underline{\textbf{\Large{LCD contrast and backlight setting}}}
 	\begin{itemize}
 	\item{Contrast of the LCD can be adjusted by adjusting the potentiometer. To save power its backlight can also be turned off by removing jumper.}
@@ -384,6 +390,8 @@
 	\end{figure}	
 	\hfill\\
 	\newpage
+	
+		\chapter[Battery voltage sensor]{Battery voltage sensor}
 	\underline{\textbf{\Large{Battery voltage sensor}}}
 	\begin{itemize}
 		\item{Two registers of 22K ohms are used to scale down the battery voltage below 5V and given to the
@@ -398,6 +406,8 @@
 	\end{figure}	
 	\hfill\\
 	\newpage
+	
+			\chapter[Atmega 16 programmer]{Atmega 16 programmer}
 	\underline{\textbf{\Large{Atmega 16 programmer}}}
 	
 	\hfill\\
@@ -413,6 +423,8 @@
 	\end{itemize}
 	\newpage
 	\hfill\\
+	
+	\chapter[Schematics]{Schematics}
 	\underline{\textbf{\Large{Schematics}}}
 	\begin{itemize}
 		\item {}
@@ -421,6 +433,7 @@
 		\includegraphics[width=\textwidth]{./HardwareManual/capture.png}
 	\end{figure}	
 	
+		\chapter[Layout]{Layout}
 	\underline{\textbf{\Large{Layout}}}
 
 	\begin{figure}[h!]
@@ -517,7 +530,7 @@
 
 \end{itemize}
 
-\section{Software and Code}
+\chapter{Software and Code}
 \href{https://github.com/eYSIP-2017/eYSIP-2017_DistributedRobotics.git}{Github link} for the repository of code
 
 All the experiment codes for hardware are available in github and can be accessed by above link.

@@ -80,7 +80,6 @@ contents={\includegraphics{logo}}
 \hfill\\
 \begin{figure}[h!]
 	\centering\includegraphics[width=350px]{./Small_bots.jpg}		
-	\caption{A picture of the swarm robots!}
 \end{figure}	
 \hfill\\
 \begin{flushright}
@@ -104,121 +103,180 @@ Swarm robotics is a field in robotics which implements coordination of multi rob
 \subsection*{Following points are completed:}
 \begin{itemize}
 \item Study the concepts of swarm robotics and get familiar
-with different robots available \\
-\item Study the kinematics of differential drive configuration \\
-\item Selecting appropriate sensors to be added \\
-\item Designing the PCB \\
-\item Assembling all the components \\
-\item Making of Mini bots \\
-\item Testing of Mini bots\\
-\item Implementing of circle formation of asynchronous fat robots with limited visibility in V-REP simulator\\
-\item Developed and implemented generic shape formation algorithm for a system of distributed robots in V-REP simulator\\
-\item Implemented follow the leader swarm behavior on Mini bots\\
-\item Implemented rendezvous swarm behavior on firebird V robots\\
+with different robots available 
+\item Study the kinematics of differential drive configuration 
+\item Selecting appropriate sensors to be added 
+\item Designing the PCB 
+\item Assembling all the components 
+\item Making of Mini bots 
+\item Testing of Mini bots
+\item Implementing of circle formation of asynchronous fat robots with limited visibility in V-REP simulator
+\item Developing and implementing generic shape formation algorithm for a system of distributed robots in V-REP simulator
+\item Implementing follow the leader swarm behavior on Mini bots
+\item Implementing rendezvous swarm behavior on Firebird V robots
 \end{itemize}
 
 \chapter[Hardware parts]{Hardware parts}
 \begin{itemize}
-  \item List of hardware: \href{./COMPONENT LIST}{COMPONENT LIST},
-  \item Detail of each hardware: Atmega16 \href{./datasheet/atmega16.pdf}{Datasheet}, {Chip component, Lamington road, Mumbai}, 
-  \item Detail of each hardware: CD40106 \href{./datasheet/CD40106.pdf}{Datasheet}, {Chip component, Lamington road, Mumbai}, 
-  \item Detail of each hardware: L293D \href{./datasheet/L293.pdf}{Datasheet}, {GALA Electronics, Lamington road, Mumbai}, 
-  \item Detail of each hardware: LM158 \href{./datasheet/lm158-n.pdf}{Datasheet}, {Chip component, Lamington road, Mumbai}, 
-  \item Connection diagram
+  \item List of all hardware components are available \href{./COMPONENT LIST/Small_robot_PCB_schematic_WITH_COST.pdf}{here} 
+  \item Microcontroller Atmega16 \href{./datasheet/atmega16.pdf}{Datasheet}, {Chip component, Lamington road, Mumbai} 
+  \item Hex buffer CD40106 \href{./datasheet/CD40106.pdf}{Datasheet}, {Chip component, Lamington road, Mumbai} 
+  \item Motor driver L293D \href{./datasheet/L293.pdf}{Datasheet}, {GALA Electronics, Lamington road, Mumbai} 
+  \item Comparator LM158 \href{./datasheet/lm158-n.pdf}{Datasheet}, {Chip component, Lamington road, Mumbai}
+  \item Actuators BO motors: 60 rpm 12 volts	
+  \item LCD 16x2: GALA Electronics, Lamington road, Mumbai
+  \item Position encoders MOC7811: GALA Electronics, Lamington road, Mumbai
+  \item ISP programmer STK500v2: \href{}, {Nex robotics}
+  \item IR proximity sensors: GALA Electronics, Lamington road, Mumbai
 \end{itemize}
-\begin{tabular}{p{0.25\linewidth} p{0.25\linewidth} p{0.25\linewidth} p{0.25\linewidth}}
-	\begin{figure}
-		\includegraphics[width=10px]{./l293d.jpeg}		
-		\caption{l293d}
-	\end{figure} & sdhljkfhs & jsdhfkjsld & jshldfhsdf\\
-\end{tabular}
+
+
 \chapter[Softwares used]{Softwares used}
 \begin{itemize}
-  \item List of softwares used are V-rep, Fusion 360, AvrDude, Avrgcc, Texstudio, Git 
-  \item Details of software: V-rep: 3.4.0, \href{http://www.coppeliarobotics.com/}{download link}, 
-  \item Installation steps \href{http://www.coppeliarobotics.com/resources.html}{download link},
-  \item Details of software: Fusion 360: 3.4.0, \href{https://www.autodesk.com/products/fusion-360/students-teachers-educators}{download link},
-  \item Installation steps \href{https://www.autodesk.com/products/fusion-360/students-teachers-educators}{download link},
-  \item Details of software: AvrDude, \href{http://www.nongnu.org/avrdude/}{download link},
-  \item Details of software: Avrgcc, \href{https://gcc.gnu.org/wiki/avr-gcc}{download link},
-  \item Details of software: texstudio, \href{http://www.texstudio.org/}{download link},
-  \item Installation steps \href{http://www.texstudio.org/}{download link},
-  \item Details of software: git, \href{https://git-scm.com/}{download link},
-  \item Installation steps \href{https://git-scm.com/}{download link},
+	\item \textbf{Autodesk Eagle 7.6.0}
+	\begin{itemize}
+		\item \href{https://www.autodesk.com/products/eagle/overview}{Download Eagle}
+		\item \href{https://www.youtube.com/user/EAGLECadSoftComputer}{Video tutorials on YouTube}
+	\end{itemize}
+  \item \textbf{V-rep 3.4.0}
+  \begin{itemize}
+  	\item \href{https://github.com/eYSIP-2017/eYSIP-2017_DistributedRobotics/blob/master/Documents/Manuals/Understanding_V_REP.pdf}{Understanding V-REP} for beginners
+  	\item  \href{http://www.coppeliarobotics.com/downloads.html}{Downloading V-REP}
+	\item  \href{http://www.coppeliarobotics.com/resources.html}{For more details on V-REP}
+  \end{itemize}
+  \item \textbf{Autodesk Fusion 360}
+\begin{itemize}
+	\item \href{https://www.autodesk.com/products/fusion-360/students-teachers-educators}{To download fusion 360 and get details on it}
+\end{itemize}
+  \item \textbf{Avrdude}
+  \begin{itemize}
+  	\item \href{http://www.nongnu.org/avrdude/}{To download Avrdude and get details on it}
+  \end{itemize}
+\item \textbf{Avrgcc}
+ \begin{itemize}
+ 	\item Worked on windows platform
+	\item \href{https://sourceforge.net/projects/winavr/files/}{To download Winavr to get avrgcc}
+	\item \href{https://gcc.gnu.org/wiki/avr-gcc}{To understand avrgcc}
+\end{itemize}
+\item \textbf{Texstudio}
+\begin{itemize}
+	\item \href{http://www.texstudio.org/}{Download Texstudio}
+\end{itemize}
+\item \textbf{Git}
+\begin{itemize}
+	\item \href{https://github.com/eYSIP-2017/eYSIP-2017_DistributedRobotics.git}{Link} to our github repository
+	\item \href{https://git-scm.com/}{Download Git}
+\end{itemize}
 \end{itemize}
 
 \newpage
 
 \chapter{Assembly of hardware}
-Circuit diagram and Steps of assembly of hardware with pictures for each step
-
-
+Refer to our \href{https://github.com/eYSIP-2017/eYSIP-2017_DistributedRobotics/blob/master/Documents/Manuals/Hardware%20Manual/document.pdf}{Hardware Manual} to understand Mini Bot better
 \section{Circuit Diagram}
-Circuit schematic, simplified circuit diagram , block diagram of system
-\hfill\\
 \begin{figure}[h!]
-	\caption{Back part of pcb}
-	\includegraphics[width=\textwidth]{./Pictures/PCB_back}		
+	\includegraphics[width=\textwidth]{./PCB_schematic.png}		
+	\caption{Overall schematic of Mini Bot PCB}
+\end{figure}
+\textbf{Main circuits:}	
+\begin{itemize}
+	\item L293D motor driver circuits: refer to Motion control section of \href{https://github.com/eYSIP-2017/eYSIP-2017_DistributedRobotics/blob/master/Documents/Manuals/Hardware%20Manual/document.pdf}{Hardware Manual}
+	\item Position encoders circuits: refer to Position encoders section of \href{https://github.com/eYSIP-2017/eYSIP-2017_DistributedRobotics/blob/master/Documents/Manuals/Hardware%20Manual/document.pdf}{Hardware Manual}
+	\item IR sensors circuits: refer to Infrared proximity and Directional
+	light intensity sensors section of \href{https://github.com/eYSIP-2017/eYSIP-2017_DistributedRobotics/blob/master/Documents/Manuals/Hardware%20Manual/document.pdf}{Hardware Manual}
+	\item Battery voltage sensor circuits: refer to Battery voltage sensor section of \href{https://github.com/eYSIP-2017/eYSIP-2017_DistributedRobotics/blob/master/Documents/Manuals/Hardware%20Manual/document.pdf}{Hardware Manual}
+\end{itemize}
+\section{Steps to build Mini Bots}
+\subsection*{Step 1: PCB designing and routing}
+\begin{figure}[h!]
+	\includegraphics[width=0.5\textwidth]{./PCB_layout}
+	\includegraphics[width=0.47\textwidth]{./Pictures/PCB_front}		
+	\caption{Routed and Printed PCB respectively}
+\end{figure}	
+We used Eagle software for designing the PCB. Gave printing of PCB to PCB power, Circuit Systems India Ltd., Gujarat.
+\subsection*{Step 2: Designing of chassis}
+We design chassis in Fusion 360 and got it laser cut on 5mm acrylic sheet in Tata Centre, IIT-B. The straight BO motors were fixed with L-clamps and then attached to chassis as shown in figure 4.3. 
+\begin{figure}[h!]
+	\centering\includegraphics[width=180px]{./Pictures/Chassis_Design}		
+		\caption{Chassi design}
+\end{figure}	
+       
+\subsection*{Step 3: Soldering components on PCB}
+Soldering the SMD components onto the PCB, based on the schematics.
+\begin{figure}[h!]
+	\centering\includegraphics[width=0.6\textwidth]{./Pictures/PCB_interfaced_with_LCD}
+	\caption{Soldered PCB}		
+\end{figure}
+\subsection*{Step 4: Assembling the robot}
+The motors are attached to the chassis and the PCB is screwed to the chassis. The battery connections are appropriately made.
+\begin{figure}[h!]
+	\includegraphics[width=0.30\textwidth]{./Pictures/version2_top}
+	\includegraphics[width=0.30\textwidth]{./Pictures/version1_Side}
+	\includegraphics[width=0.30\textwidth]{./Pictures/version1_Back}
+	\caption{Assembled robots}		
 \end{figure}	
 \hfill\\
-\subsection*{Step 1}
-Designing schematics and routing layout of PCB and getting them printed.
-\hfill\\
-\begin{figure}[h!]
-	\caption{Front part of pcb}
-	\includegraphics[width=\textwidth]{./Pictures/PCB_front}		
-\end{figure}	
-\hfill\\
-\newpage
-\subsection*{Step 2}
-Designing chassis and getting them laser cut. Fixing motors with L-clamps 
-\hfill\\
-\begin{figure}[h!]
-	\caption{Chassi design}
-	\includegraphics[width=350px]{./Pictures/Chassis_Design}		
-\end{figure}	
-\hfill\\
-\newpage        
-\subsection*{Step 3}
-Soldering PCBs and attaching PCB on top of chassi.
-\hfill\\
-\begin{figure}[h!]
-	\caption{Complete robot.}
-	\includegraphics[width=\textwidth]{./Pictures/version2_top}		
-\end{figure}	
-\hfill\\
-\newpage
-\section{Software and Code}
+
+\chapter{Software and Code}
+\section{Github repository}
 \href{https://github.com/eYSIP-2017/eYSIP-2017_DistributedRobotics.git}{Github link} for the repository of code
 
-\section{Use and Demo}
-Final Setup Image
+Github repository contains all the documentation and code of the project worked on. The document folder contains the manuals for hardware components/structure of Mini bots, generic shape formation algorithm for system of distributed robots and a small article to understand the working of V-REP simulator. It also contains video results of the project.
 
-User Instruction for demonstration
+The code folder contains following codes:
+\begin{itemize}
+	\item C code for P controller for angular control
+	\item Embedded C code for rendezvous problem (Firebird V platform)
+	\item Eagle EDA project folder
+	\item Test code for Mini Bots
+	\item V-REP project for circle formation of fat robots
+	\item V-REP project for generic shape formation
+\end{itemize}
 
-\href{http://www.youtube.com}{Youtube Link} of demonstration video 
+\chapter{Use and Demo}
 
-\section{Future Work}
-Design an outer covering.\\
-Implementing gathering and circle formation algorithms on Mini bots.\\
-Solve collision of homogeneous dynamic swarm robots.\\
+Videos of the demos can be seen \href{https://github.com/eYSIP-2017/eYSIP-2017_DistributedRobotics/tree/master/Documents/Videos}{here}
+\begin{figure}[h!]
+	\centering\includegraphics[width=250px]{./Pictures/Circle_formation_2}		
+	\caption{Multiple robots forming a circle based on algorithm defined in "Circle formation for asynchronous fat robots with limited visibility" in V-REP simulator.}
+\end{figure}
 
-\section{Bug report and Challenges}
-\hfill\\
-	\includegraphics[width=\textwidth]{./Capture2.png}
-\hfill\\
+\begin{figure}[h!]
+	\centering\includegraphics[width=250px]{./Pictures/A_shape}		
+	\caption{Multiple robots forming shape A based on the algorithm defined in "Generic shape formation algorithm for a system of distributed robots" in V-REP simulator}
+\end{figure}
 
-Bugs: Pin 3 of both encoders was supposed to be shorted to ground and connection to buffer connected to led was supposed to be shorted to pin 4.\\
-Fix: The bug is fixed by shorting pin 3 to ground externally.\\
+\begin{figure}[h!]
+	\centering\includegraphics[width=250px]{./Pictures/Follow_lead}		
+	\caption{Follow the leader swarm behavior portrayed by our Mini bots}
+\end{figure}	
+\newpage
+\chapter{Future Work}
+\begin{itemize}
+	\item Design an outer covering
+	\item Implementing circle formation algorithms on Mini bots
+	\item Implementing gathering algorithms on Mini bots
+	\item Solve shape formation with Mini Bots
+	\item Solve collision of homogeneous dynamic swarm robots
+	\item Find a better algorithm for tie breaking when many robots approach a single point	
+\end{itemize}
 
-Challenges faced:\\
-Placing components and routing air wires of PCB.\\
+\chapter{Bug report and Challenges}
+\begin{figure}[h!]
+	\includegraphics[width=\linewidth]{./Capture2.png}
+	\caption{Position encoder connection}
+\end{figure}
 
-Reducing overall size of PCB.\\
+Bugs: Pin 3 of both encoders was supposed to be shorted to ground and connection to buffer connected to led was supposed to be shorted to pin 4\\
+Fix: The bug is fixed by shorting pin 3 to ground externally\\
 
-Understanding different algorithms for circle formation and gathering algorithms for swarm robots to determine a common point for resolving global coordinate system\\
-
-Soldering SMD components accurately.\\
+Challenges faced:
+\begin{itemize}
+	\item Placing components and routing air wires of PCB. 
+	\item Reducing overall size of PCB
+	\item Understanding different algorithms for circle formation and gathering algorithms for swarm robots to determine a common point for resolving global coordinate system
+	\item Soldering SMD components accurately
+\end{itemize}
 
 \begin{thebibliography}{li}
 \bibitem{wavelan97}
