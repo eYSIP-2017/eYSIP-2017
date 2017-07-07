@@ -75,7 +75,7 @@
 \begin{titlepage}
 	\raggedright
 	{\Large eYSIP2017\\[1cm]}
-	{\Huge\scshape\centering Distributed robotics - multi swarm robots \\[.1in]}
+	{\Huge\scshape\centering Distributed robotics - multi swarm robots \\ Hardware manual\\[.1in]}
 	\vfill
 		\hfill\\
 	\begin{figure}[h!]
@@ -133,8 +133,8 @@ limited to:
 	\chapter{Mini Bots Block Diagram}
 	
 	\begin{figure}[h!]
+		\centering\includegraphics[width=300px]{./Block_Diagram.jpg}
 		\caption{Block diagram of hardware}
-		\includegraphics[width=300px]{./Block_Diagram.jpg}
 	\end{figure}
 	\hfill\\
 	\chapter{Mini bots technical specification}
@@ -157,8 +157,8 @@ limited to:
 	\hfill\\	
 	\underline{\textbf{\Large{Top view of PCB}}}
 	\begin{figure}[h!]
-		\caption{Top view of PCB}
 		\includegraphics[width=\textwidth]{./HardwareManual/Front.jpg}
+		\caption{Top view of PCB}
 	\end{figure}
 	\hfill\\
 	
@@ -169,13 +169,6 @@ limited to:
 			sized 6 cell battery holder.}
 		\item{Before connecting the battery pack or inserting batteries in the socket, make sure that 	battery connection jumper of the robot is not put. You need to charge the battery before first use. Use any AC adaptor / SMPS	which can give accurate 12V DC and 1Amp current.}
 	\end{itemize}
-
-	\hfill\\
-	\begin{figure}[h!]
-		\caption{Battery connection jumper}
-		\includegraphics[width=\textwidth]{./HardwareManual/BatteryIndication.jpg}
-	\end{figure}
-	\hfill\\	
 	
 	\begin{itemize}
 	\item {Mini bots are powered by 6 NiMH rechargeable batteries of 0.8Ah and above capacity. When it is
@@ -188,7 +181,11 @@ limited to:
 	3. Battery charging when robot is powered off and external battery charger is
 	connected.\\}
 	\end{itemize}
-	\hfill\\	
+
+	\begin{figure}[h!]
+	\includegraphics[width=\textwidth]{./HardwareManual/BatteryIndication.jpg}
+	\caption{Battery connection jumper}
+\end{figure}	
 	
 	\chapter[Battery Maintenance]{Battery Maintenance}
 	\underline{\textbf{\Large{Battery Maintenance}}}
@@ -214,22 +211,17 @@ limited to:
 		LEDs are connected at the input and the output stage of the motor driver for quick interpretation
 		of the motion commands.}
 	\end{itemize}
-	\hfill\\
 	\begin{figure}[h!]
-		\caption{L293d port and wheel motion indication}
 		\includegraphics[width=\textwidth]{./HardwareManual/WheelMotionIndication_L293D.jpg}
+		\caption{L293d port and wheel motion indication}
 	\end{figure}
-	\hfill\\
-		
-	\hfill\\
 	\begin{figure}[h!]
-		\caption{Pulse width modulation}
 		\includegraphics[width=\textwidth]{./HardwareManual/pwm.png}
+		\caption{Pulse width modulation}
 	\end{figure}
 
-	\hfill\\
 	\begin{itemize}
-	\item {Above figure shows the PWM waveforms for motor velocity control. In case (A), ON time is 90 percent of time period. This wave has more average value. Hence more power is delivered to the
+	\item {Figure 6.2 shows the PWM waveforms for motor velocity control. In case (A), ON time is 90 percent of time period. This wave has more average value. Hence more power is delivered to the
 	motor. In case (B), the motor will run slower as the ON time is just 10 percent of time period.}
 
 	\begin{tabular*}{\textwidth}{|l|c|c|}
@@ -254,8 +246,8 @@ limited to:
 	\newpage
 	\hfill\\
 	\begin{figure}[h!]
+		\centering\includegraphics[width=\textwidth]{./HardwareManual/l293d.png}
 		\caption{Motor driver schematics}
-		\includegraphics[width=\textwidth]{./HardwareManual/l293d.png}
 	\end{figure}
 	\hfill\\
 	\chapter{Position encoders}
@@ -279,20 +271,20 @@ limited to:
 
 	\hfill\\
 	\begin{figure}[h!]
-		\caption{40106 hex buffer}
 		\includegraphics[width=\textwidth]{./HardwareManual/40106_buffer.jpg}
+		\caption{40106 hex buffer}
 	\end{figure}
 
 	\hfill\\
 	\begin{figure}[h!]
-		\caption{Position encoders}
 		\includegraphics[width=\textwidth]{./HardwareManual/Position_encoders.jpg}
+		\caption{Position encoders}
 	\end{figure}
 		
 	\hfill\\
 	\begin{figure}[h!]
-		\caption{Position encoders schematics}
 		\includegraphics[width=\textwidth]{./HardwareManual/motor_encoder.png}
+		\caption{Position encoders schematics}
 	\end{figure}
 
 \newpage
@@ -303,10 +295,10 @@ limited to:
 		Infrared proximity sensors are used to detect proximity of any obstacles in the short range. IR
 		proximity sensors have about 10cm sensing range. Mini bots has 8 IR proximity sensors.\\
 		In the absence of the obstacle there is no reflected light hence no leakage current will flow
-		through the photo transistor and output voltage of the photodiode will be around 5V. As obstacle
-		comes closer, more light gets reflected and falls on the photo diode and leakage current flowing
-		through the photo diode starts to increase which causes voltage across the diode to fall.\\
-		If IR LEDs are disabled using jumpers then same photo diodes works as directional light
+		through the photo transistor and output voltage of the photo transistor will be around 5V. As obstacle
+		comes closer, more light gets reflected and falls on the photo transistor and leakage current flowing
+		through the photo transistor starts to increase which causes voltage across the diode to fall.\\
+		If IR LEDs are disabled using jumpers then same photo transistors works as directional light
 		intensity sensors.
 		IR sensors detect the light from the transmitters present on the neighbouring robots for determining direction and distance of robots.\\
 	}
@@ -314,8 +306,8 @@ limited to:
 
 	\hfill\\
 	\begin{figure}[h!]
-		\caption{IR sensors}
 		\includegraphics[width=300px]{./HardwareManual/IR_Sensor.jpg}
+		\caption{IR sensors}
 	\end{figure}	
 	\hfill\\
 	\newpage
@@ -323,8 +315,8 @@ limited to:
 		
 	\hfill\\
 	\begin{figure}[h!]
-		\caption{LCD port}
 		\includegraphics[width=\textwidth]{./HardwareManual/lcd1.jpg}
+		\caption{LCD port}
 	\end{figure}	
 	\hfill\\
 	
@@ -341,8 +333,8 @@ limited to:
 
 	\hfill\\
 	\begin{figure}[h!]
-		\caption{Block diagram of lcd connection to atmega16}
 		\includegraphics[width=\textwidth]{./HardwareManual/lcd.png}
+		\caption{Block diagram of lcd connection to atmega16}
 	\end{figure}	
 	\hfill\\
 	
@@ -371,8 +363,8 @@ limited to:
 
 	\hfill\\
 	\begin{figure}[h!]
-		\caption{Timing diagram for lcd}
 		\includegraphics[width=\textwidth]{./HardwareManual/lcd_timing_diagram.png}
+		\caption{Timing diagram for lcd}
 	\end{figure}	
 	\hfill\\
 	\newpage
@@ -385,13 +377,13 @@ limited to:
 	
 	\hfill\\
 	\begin{figure}[h!]
-		\caption{Schematics of Lcd connection}
 		\includegraphics[width=\textwidth]{./HardwareManual/lcd_connection.png}
+		\caption{Schematics of Lcd connection}
 	\end{figure}	
 	\hfill\\
 	\newpage
 	
-		\chapter[Battery voltage sensor]{Battery voltage sensor}
+	\chapter[Battery voltage sensor]{Battery voltage sensor}
 	\underline{\textbf{\Large{Battery voltage sensor}}}
 	\begin{itemize}
 		\item{Two registers of 22K ohms are used to scale down the battery voltage below 5V and given to the
@@ -401,19 +393,17 @@ limited to:
 
 	\hfill\\
 	\begin{figure}[h!]
+		\includegraphics[width=300px]{./HardwareManual/battery_voltage_sensor.png}
 		\caption{Battery sensing circuit}
-		\includegraphics[width=\textwidth]{./HardwareManual/battery_voltage_sensor.png}
 	\end{figure}	
-	\hfill\\
-	\newpage
 	
-			\chapter[Atmega 16 programmer]{Atmega 16 programmer}
+	\chapter[Atmega 16 programmer]{Atmega 16 programmer}
 	\underline{\textbf{\Large{Atmega 16 programmer}}}
 	
 	\hfill\\
 	\begin{figure}[h!]
+		\centering\includegraphics[width=300px]{./HardwareManual/ISP_programmer.png}
 		\caption{ISP programmer}
-		\includegraphics[width=\textwidth]{./HardwareManual/ISP_programmer.png}
 	\end{figure}	
 	\hfill\\
 	
@@ -421,24 +411,20 @@ limited to:
 	\item{Mini bots have ATMEGA16 microcontroller running at 16MHz. Robot is programmed by ISP (In System Programming) using AVR USB programmer from NEX
 		Robotics or ATMEL’s AVR ISP mkII.}
 	\end{itemize}
-	\newpage
-	\hfill\\
 	
 	\chapter[Schematics]{Schematics}
 	\underline{\textbf{\Large{Schematics}}}
-	\begin{itemize}
-		\item {}
 	\begin{figure}[h!]
-		\caption{Complete schematics of pcb}
 		\includegraphics[width=\textwidth]{./HardwareManual/capture.png}
+		\caption{Complete schematic of pcb}
 	\end{figure}	
 	
-		\chapter[Layout]{Layout}
+	\chapter[Layout]{Layout}
 	\underline{\textbf{\Large{Layout}}}
 
 	\begin{figure}[h!]
-		\caption{Complete layout of pcb}
 		\includegraphics[width=\textwidth]{./HardwareManual/capture1.png}
+		\caption{Complete layout of pcb}
 	\end{figure}		
 
 
@@ -527,12 +513,5 @@ limited to:
 	40 & PA0(ADC0) & ADC input for analog IR proximity sensor\\
 	\hline
 \end{tabular*}
-
-\end{itemize}
-
-\chapter{Software and Code}
-\href{https://github.com/eYSIP-2017/eYSIP-2017_DistributedRobotics.git}{Github link} for the repository of code
-
-All the experiment codes for hardware are available in github and can be accessed by above link.
 
 \end{document}

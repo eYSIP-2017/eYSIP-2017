@@ -1,5 +1,5 @@
 \select@language {english}
-\contentsline {chapter}{\numberline {1}Distributed robotics - multi swarm robots}{2}{chapter.1}
+\contentsline {chapter}{\numberline {1}Distributed robotics - multi swarm robots Hardware manual}{2}{chapter.1}
 \contentsline {section}{\numberline {1.1}Abstract}{2}{section.1.1}
 \contentsline {chapter}{\numberline {2}Hardware parts}{4}{chapter.2}
 \contentsline {chapter}{\numberline {3}Softwares used}{5}{chapter.3}
