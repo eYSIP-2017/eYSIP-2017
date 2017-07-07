@@ -1,0 +1,15 @@
+\select@language {english}
+\contentsline {chapter}{\numberline {1}Introduction}{2}{chapter.1}
+\contentsline {chapter}{\numberline {2}Mini Bots Block Diagram}{4}{chapter.2}
+\contentsline {chapter}{\numberline {3}Mini bots technical specification}{5}{chapter.3}
+\contentsline {chapter}{\numberline {4}Powering up Mini bots}{7}{chapter.4}
+\contentsline {chapter}{\numberline {5}Battery Maintenance}{9}{chapter.5}
+\contentsline {chapter}{\numberline {6}Motion control}{10}{chapter.6}
+\contentsline {chapter}{\numberline {7}Position encoders}{14}{chapter.7}
+\contentsline {chapter}{\numberline {8}Infrared proximity and Directional light intensity sensors}{17}{chapter.8}
+\contentsline {chapter}{\numberline {9}LCD contrast and backlight setting}{22}{chapter.9}
+\contentsline {chapter}{\numberline {10}Battery voltage sensor}{23}{chapter.10}
+\contentsline {chapter}{\numberline {11}Atmega 16 programmer}{25}{chapter.11}
+\contentsline {chapter}{\numberline {12}Schematics}{27}{chapter.12}
+\contentsline {chapter}{\numberline {13}Layout}{28}{chapter.13}
+\contentsline {chapter}{\numberline {14}Software and Code}{30}{chapter.14}
